@@ -38,21 +38,22 @@
       text-align: center
     }
 
-    /* margin设置，但是页面缩放就乱了不知道怎么处理 */
+    /* margin设置 */
 
-    /* .main{
+    .main{
       margin-left: 222px;
-      margin-top: -48.5%;
-    }  */
+      margin-top: calc(-100vh - 2px);
+      /* margin-top: calc(-100vh + 100px); */
+    } 
 
     /* 浮动 */
 
-    .aside {
+    /* .aside {
       float: left;
     }
     .main {
       margin-left: 220px;
-    }
+    } */
 
     /* 绝对定位 */
 
@@ -93,7 +94,7 @@
   <section>
     <div class="aside">220px</div>
     <div class="main">
-      <p>1.margin设置，但是页面缩放就乱了不知道怎么处理 </p>
+      <p>1.margin设置</p>
       <p>2.浮动</p>
       <p>3.绝对定位</p>
       <p>4.flex</p>
