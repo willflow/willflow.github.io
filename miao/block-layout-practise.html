@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>练习3</title>
+  <style>
+    ul{
+      padding: 0;
+      margin: o;
+    }
+    li{
+      list-style: none;
+    }
+    .main{
+      width: 600px;
+      margin: 0 auto;
+    }
+    header{
+      background-color: rgb(17, 16, 16);
+      color: #fff;
+    }
+    .list{
+      box-sizing: border-box;
+      width: 180px;
+      height: 40px;
+      line-height: 40px;
+      border: 3px solid black;
+      margin: 15px;
+      background-color: pink;
+    }
+    .list:nth-child(-n+4){
+      margin-left: 0;
+    }
+    .list:nth-child(n+5){
+      margin-left: 210px;
+    }
+    .list:nth-child(n+9){
+      margin-left:420px;
+    }
+    .list:nth-child(4n+5){
+      margin-top: -220px;
+    }
+    .list:hover{
+      background-color: red;
+    }
+
+    .link-list{
+      overflow: hidden;
+    }
+    .link{
+      border-bottom: 1px dotted black;
+      margin-bottom: -1px;
+    }
+
+    footer{
+      background-color: plum;
+      text-align: center;
+    }
+    footer p:first-child{
+      margin-bottom: 0;
+    }
+    footer p:last-child{
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="main">
+      <p>hello world 请调整浏览器窗口大小查看效果</p>
+    </div>
+  </header>
+  <section>
+    <div class="main">
+      <p>页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px</p>
+      <ul>
+        <li class="list">宽180高40(包含边框)</li>
+        <li class="list">水平间隙30px</li>
+        <li class="list">垂直间隙15px</li>
+        <li class="list">边框宽度3px</li>
+        <li class="list">产品</li>
+        <li class="list">产品</li>
+        <li class="list">产品</li>
+        <li class="list">产品</li>
+        <li class="list">产品</li>
+        <li class="list">产品</li>
+        <li class="list">产品</li>
+        <li class="list">产品</li>
+      </ul>
+      <ul class="link-list">
+        <li class="link">link</li>
+        <li class="link">link</li>
+        <li class="link">link</li>
+        <li class="link">link</li>
+        <li class="link">link</li>
+      </ul>
+    </div>
+  </section>
+  <footer>
+    <p>&copy;版权所有</p>
+    <p>本页面所有布局均采用块级元素</p>
+  </footer>
+</body>
+</html>
