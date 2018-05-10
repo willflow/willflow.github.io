@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>练习4</title>
+  <style>
+    /* 公共样式 */
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    header {
+      height: 100px;
+    }
+
+    section {
+      height: 100%;
+    }
+
+    .aside {
+      width: 220px;
+      height: 100%;
+      border-top: 2px solid black;
+      border-right: 2px solid black;
+    }
+
+    .main {
+      height: 100%;
+      border-top: 2px solid black;
+      text-align: center
+    }
+
+    /* margin设置，但是页面高度改变不知道怎么处理 */
+
+    /* .main{
+      margin-left: 222px;
+      margin-top: -48.5%;
+    }  */
+
+    /* 浮动 */
+
+    .aside {
+      float: left;
+    }
+    .main {
+      margin-left: 220px;
+    }
+
+    /* 绝对定位 */
+
+    /* section{
+      position: relative;
+    }
+    .aside{
+      position: absolute;
+      left: 0;
+    }
+    .main{
+      position: absolute;
+      left: 222px;
+      right: 0;
+    } */
+
+    /* flex */
+
+    /* section{
+      display: flex;
+    }
+    .main{
+      flex: 1;
+    } */
+
+    /* 网格布局 */
+
+    /* section{
+      display: grid;
+      grid-template-rows:100%;
+      grid-template-columns:220px auto;
+    } */
+  </style>
+</head>
+
+<body>
+  <header>11111111</header>
+  <section>
+    <div class="aside">220px</div>
+    <div class="main">
+      <p>1.margin设置，但是页面高度改变就乱了不知道怎么处理 </p>
+      <p>2.浮动</p>
+      <p>3.绝对定位</p>
+      <p>4.flex</p>
+      <p>5.网格</p>
+    </div>
+  </section>
+</body>
+
+</html>
