@@ -11,6 +11,8 @@
       margin: 0;
     }
     li{
+      padding: 0;
+      margin: 0;
       list-style: none;
     }
     .main{
@@ -27,20 +29,14 @@
       height: 40px;
       line-height: 40px;
       border: 3px solid black;
-      margin: 15px;
+      margin-right: 30px;
+      margin-bottom: 15px;
       background-color: pink;
+      display: inline-block;
     }
-    .list:nth-child(-n+4){
-      margin-left: 0;
-    }
-    .list:nth-child(n+5){
-      margin-left: 210px;
-    }
-    .list:nth-child(n+9){
-      margin-left:420px;
-    }
-    .list:nth-child(4n+5){
-      margin-top: -220px;
+
+    .list:nth-child(3n+3){
+      margin-right: 0;
     }
     .list:hover{
       background-color: red;
@@ -76,18 +72,18 @@
     <div class="main">
       <p>页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px 页面主体 宽度600px</p>
       <ul>
-        <li class="list">宽180高40(包含边框)</li>
-        <li class="list">水平间隙30px</li>
-        <li class="list">垂直间隙15px</li>
-        <li class="list">边框宽度3px</li>
-        <li class="list">产品</li>
-        <li class="list">产品</li>
-        <li class="list">产品</li>
-        <li class="list">产品</li>
-        <li class="list">产品</li>
-        <li class="list">产品</li>
-        <li class="list">产品</li>
-        <li class="list">产品</li>
+        <li class="list">宽180高40(包含边框)</li><!--
+        --><li class="list">水平间隙30px</li><!--
+        --><li class="list">垂直间隙15px</li><!--
+        --><li class="list">边框宽度3px</li><!--
+        --><li class="list">产品</li><!--
+        --><li class="list">产品</li><!--
+        --><li class="list">产品</li><!--
+        --><li class="list">产品</li><!--
+        --><li class="list">产品</li><!--
+        --><li class="list">产品</li><!--
+        --><li class="list">产品</li><!--
+        --><li class="list">产品</li>
       </ul>
       <ul class="link-list">
         <li class="link">link</li>

@@ -10,7 +10,8 @@
     /* 公共样式 */
 
     html,
-    body {
+    body,
+    * {
       margin: 0;
       padding: 0;
       height: 100%;
@@ -19,6 +20,7 @@
     header {
       height: 100px;
       background-color: lightcoral;
+      border-bottom: 2px solid black;
     }
 
     section {
@@ -28,33 +30,40 @@
     .aside {
       width: 220px;
       height: 100%;
-      border-top: 2px solid black;
       border-right: 2px solid black;
       background-color: #e8ebef;
     }
 
     .main {
       height: 100%;
-      border-top: 2px solid black;
       text-align: center;
       background-color: lightblue;
+    }
+
+    /* 行内布局 */
+    div{
+      display: inline-block;
+    }
+    .main{
+      width: calc(100% - 222px);
+      height: 100%;
     }
 
     /* margin设置 */
 
     /* .main{
       margin-left: 222px;
-      margin-top: calc(-100vh - 2px);
+      margin-top: calc(-100vh);
     }  */
 
     /* 浮动 */
 
-    .aside {
+    /* .aside {
       float: left;
     }
     .main {
       margin-left: 222px;
-    }
+    } */
 
     /* 绝对定位 */
 
@@ -93,9 +102,9 @@
 <body>
   <header>11111111</header>
   <section>
-    <div class="aside">220px</div>
-    <div class="main">
-      <p>1.margin</p>
+    <div class="aside">220px</div><!--
+    --><div class="main">
+      <p>qq邮箱</p>
     </div>
   </section>
 </body>
