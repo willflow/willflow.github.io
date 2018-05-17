@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>背景练习</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url(../images/bg1.jpg);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    header {
+      width: 1200px;
+      height: 600px;
+      padding: 50px;
+      margin-left: 100px;
+      display: inline-block;
+      background-image: url(../images/bg2.jpg);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-attachment: fixed;
+      box-shadow: 0 0 0 3px rgba(0, 0, 0, .2);
+    }
+
+    .a,
+    .b,
+    .c {
+      height: 600px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    .a {
+      background-image: url(../images/porsche-model1.png);
+    }
+
+    .b {
+      background-image: url(../images/porsche-model3.png);
+    }
+
+    .c {
+      background-image: url(../images/porsche-model2.png);
+    }
+
+    .home {
+      width: 85px;
+      height: 200px;
+      background-image: url(../images/mi.jpg);
+      background-repeat: no-repeat;
+      background-size: 200px;
+      transition: background-position .5s;
+      margin-left: 100px;
+      display: inline-block;
+    }
+
+    .home:hover {
+      background-position: -85px 0;
+    }
+
+    .box {
+      width: 350x;
+      height: 100px;
+      border: 3px solid #ccc;
+    }
+
+    span {
+      display: inline-block;
+      width: 65px;
+      height: 60px;
+      background-image: url(../images/sprite.png);
+      background-repeat: no-repeat;
+      margin: 5px;
+    }
+
+    .icon1 {
+      background-position: 16px 0;
+    }
+
+    .icon2 {
+      background-position: -300px 0;
+    }
+
+    .icon3 {
+      background-position: -275px -80px;
+    }
+
+    .icon4 {
+      background-position: -210px -138px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio minima earum sapiente ullam sunt sequi, fuga quo
+      vero deleniti itaque, dicta, tempora consequatur aliquam adipisci incidunt officia ipsa cupiditate obcaecati.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio minima earum sapiente ullam sunt sequi, fuga quo
+      vero deleniti itaque, dicta, tempora consequatur aliquam adipisci incidunt officia ipsa cupiditate obcaecati.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio minima earum sapiente ullam sunt sequi, fuga quo
+      vero deleniti itaque, dicta, tempora consequatur aliquam adipisci incidunt officia ipsa cupiditate obcaecati.</p>
+  </header>
+  <div class="home"></div>
+  <div class="a"></div>
+  <div class="b"></div>
+  <div class="c"></div>
+  <div class="box">
+    <span class="icon1"></span>
+    <span class="icon2"></span>
+    <span class="icon3"></span>
+    <span class="icon4"></span>
+  </div>
+</body>
+
+</html>
