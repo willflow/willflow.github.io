@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>按钮</title>
+  <style>
+    div{
+      width: 60px;
+      margin:300px auto;
+    }
+
+    input {
+      display: none;
+    }
+
+    label {
+      display: inline-block;
+      width: 60px;
+      height: 30px;
+      border-radius: 999px;
+      padding: 2px;
+      border: 2px rgba(0, 0, 0, 0.3);
+      background-color: #ccc;
+      transition: box-shadow .5s;
+    }
+
+    label::before {
+      content: "";
+      display: inline-block;
+      width: 30px;
+      height: 30px;
+      box-shadow: 0 3px 3px #6669;
+      border-radius: 999px;
+      background-color: #fff;
+      transition: margin-left .4s;
+    }
+
+    input:checked+label {
+      box-shadow: 0 0 0 17px #6edc5f inset;
+    }
+
+    input:checked+label::before {
+      margin-left: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <input type="checkbox" id="ios">
+    <label for="ios"></label>
+  </div>
+</body>
+
+</html>
