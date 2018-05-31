@@ -22,6 +22,9 @@
 
 /* banner布局样式 */
 /* 搜索列 */
+.banner {
+  position: relative;
+}
 .banner-list {
   height: 60px;
   margin: 22px 0;
