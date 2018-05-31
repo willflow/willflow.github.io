@@ -1,0 +1,227 @@
+/* 布局公共样式 */
+.main {
+  width: 1225px;
+  margin: 0 auto;
+}
+
+.clearfix::after {
+  content: " ";
+  display: table;
+  height: 0;
+  clear: both;
+}
+/* header布局样式 */
+.header-bar {
+  height: 120px;
+}
+
+.header-nav {
+  height: 40px;
+  background-color: #333;
+}
+
+/* banner布局样式 */
+/* 搜索列 */
+.banner-list {
+  height: 60px;
+  margin: 22px 0;
+}
+
+/* 轮播图和侧边导航 */
+.banner-main {
+  height: 460px;
+  margin-bottom: 15px;
+  background-color: #e2ddf4;
+}
+
+/* 轮播图之后的广告 */
+.banner-group {
+  margin-bottom: 40px;
+}
+
+.banner-group-way {
+  float: left;
+  width: 235px;
+  height: 170px;
+  background-color: #5f5750;
+  margin-right: 15px;
+  font-size: 14px;
+}
+
+.banner-group-bar {
+  float: left;
+  width: 315px;
+  height: 170px;
+  margin-right: 15px;
+}
+
+.banner-group-bar:last-child {
+  margin-right: 0;
+}
+
+/* 小米闪购文字 */
+.banner-flashover {
+  height: 30px;
+  margin-bottom: 12px;
+}
+
+/* 小米闪购列表 */
+.banner-flash-list {
+  margin-bottom: 45px;
+}
+
+.ba-fl-item {
+  width: 233px;
+  height: 340px;
+  float: left;
+  margin-right: 15px;
+  background-color: #fafafa;
+}
+
+.ba-fl-item:last-child {
+  margin-right: 0;
+}
+
+/* 黑鲨游戏手机 */
+.banner-shark {
+  height: 120px;
+  background-color: #fceded;
+  margin-bottom: 45px;
+}
+
+/* container商品展示布局样式 */
+.container {
+  background-color: #f5f5f5;
+}
+
+.con-more{
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+/* 手机展示列表 */
+.container-phones {
+  margin-top: 35px;
+}
+
+.con-ph-item {
+  width: 233px;
+  height: 300px;
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  background-color: #ffffff;
+}
+
+.con-ph-item:nth-child(5),
+.con-ph-item:nth-child(9) {
+  margin-right: 0;
+}
+
+.con-ph-item:first-child {
+  height: 615px;
+}
+
+/* 家电,智能，搭配，配件，周边公共样式 */
+.con-hou-item,
+.con-intel-item,
+.con-coll-item,
+.con-parts-item,
+.con-peri-item {
+  width: 233px;
+  height: 300px;
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  background-color: #ffffff;
+}
+
+.con-hou-item:nth-last-child(-n + 2),
+.con-intel-item:nth-last-child(-n + 2),
+.con-coll-item:nth-last-child(-n +2),
+.con-parts-item:nth-last-child(-n +2),
+.con-peri-item:nth-last-child(-n +2) {
+  height: 142.5px;
+}
+
+.con-hou-item:nth-child(5n),
+.con-hou-item:nth-child(11),
+.con-intel-item:nth-child(5n),
+.con-intel-item:nth-child(11),
+.con-coll-item:nth-child(5n),
+.con-coll-item:nth-child(11),
+.con-parts-item:nth-child(5n),
+.con-parts-item:nth-child(11),
+.con-peri-item:nth-child(5n),
+.con-peri-item:nth-child(11) {
+  margin-right: 0;
+}
+
+.con-ph-bar,
+.con-hou-bar,
+.con-intel-bar,
+.con-coll-bar,
+.con-parts-bar {
+  position: relative;
+  z-index: 5;
+  height: 120px;
+  margin: 40px 0;
+}
+
+/* 个人推荐 */
+.con-rec-more {
+  height: 30px;
+  margin-bottom: 20px;
+  background-color: red;
+}
+
+.con-rec-item {
+  width: 233px;
+  height: 300px;
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  background-color: #fff;
+}
+
+.con-rec-item:nth-child(5) {
+  margin-right: 0;
+}
+
+/* 热评商品,内容，视频 */
+.con-hot-more,
+.con-cont-more,
+.con-video-more {
+  height: 30px;
+  margin-bottom: 20px;
+  background-color: red;
+}
+
+.con-hot-item,
+.con-cont-item,
+.con-video-item {
+  box-sizing: border-box;
+  width: 295px;
+  height: 420px;
+  float: left;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  background-color: #fff;
+}
+
+.con-hot-item:last-child,
+.con-cont-item:last-child,
+.con-video-item:last-child  {
+  margin-right: 0;
+}
+
+
+/* 视频 */
+.con-video-item {
+  height: 285px;
+}
+
+/* footer */
+.footer {
+  background-color: #fff;
+}
