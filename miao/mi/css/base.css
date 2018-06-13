@@ -615,6 +615,65 @@ height: 0;
   transform: translateY(-1px);
 }
 
+.con-p {
+  float: left;
+  padding: 5px 0;
+  font-size: 24px;
+  color: #adadad;
+}
+.con-div-a,
+.con-div-b,
+.con-div-c,
+.con-div-d {
+  float: right;
+  padding: 5px 0;
+  font-size: 18px;
+  color: #333;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.container-house {
+  position: relative;
+  height: 864px;
+}
+
+.con-absolute-a,
+.con-absolute-b,
+.con-absolute-c,
+.con-absolute-d {
+  margin-top: 15px;
+  position: absolute;
+  width: 1225px;
+  height: 630px;
+  visibility: hidden;
+  transition: 0s 99999999999s; 
+}
+
+.con-absolute-d {
+  visibility: visible;
+}
+
+.con-div-a:hover ~ .con-absolute-a,
+.con-div-b:hover ~ .con-absolute-b,
+.con-div-c:hover ~ .con-absolute-c,
+.con-div-d:hover ~ .con-absolute-d {
+  visibility: visible;
+  transition: none;
+}
+
+.con-div-a:hover ~ section,
+.con-div-b:hover ~ section,
+.con-div-c:hover ~ section,
+.con-div-d:hover ~ section {
+  visibility: hidden;
+  transition:none;
+}
+
+.con-hou-bar {
+  top: 630px
+}
+
 .con-more {
   line-height: 30px;
   font-size: 22px;
@@ -648,11 +707,19 @@ height: 0;
 }
 
 .con-more div:hover,
-.con-more ul li:hover {
+.con-more ul li:hover,
+.con-div-a:hover,
+.con-div-b:hover,
+.con-div-c:hover,
+.con-div-d:hover {
   color: #ff6700;
 }
 
-.con-more ul li:hover{
+.con-more ul li:hover,
+.con-div-a:hover,
+.con-div-b:hover,
+.con-div-c:hover,
+.con-div-d:hover {
   border-bottom: 2px solid #ff6700;
 }
 
