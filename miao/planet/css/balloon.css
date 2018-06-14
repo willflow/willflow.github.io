@@ -1,0 +1,144 @@
+.balloon,
+.balloon1,
+.balloon2 {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  width: 160px;
+  height: 50px;
+  margin-left: -80px;
+  background-color: orangered;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.balloon1 {
+  top: 50%;
+}
+
+.balloon2 {
+  top: 75%;
+}
+
+.balloon::after,
+.balloon1::after,
+.balloon2::after {
+  position: absolute;
+  content: "";
+  box-sizing: border-box;
+  top:-150px;
+  opacity: 0;
+  left: 50%;
+  margin-left: -130px;
+  width: 260px;
+  height: 150px;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  border: 1px solid #333;
+  background-color: #333;
+  border-radius: 5px;
+  transition:all .1s linear .25s;
+}
+
+.balloon::after {
+  line-height: 20px;
+  padding: 10px;
+  content: "看完了啊，好玩吗？上面的动物是一块一块认真拼的，你应该喜欢。另外两个页面是来搞笑的，希望能让你开心一下哈哈哈哈，今天辛苦了！";
+}
+
+.balloon1::after {
+  top: -100%;
+  left: -80%;
+  background:url(../images/ai11.png) no-repeat center center;
+  background-color: lightgoldenrodyellow;
+}
+
+.balloon2::after {
+  top: -100%;
+  left: 170%;
+  background:url(../images/ai22.png) no-repeat center center;
+  background-color: lightgoldenrodyellow;
+}
+
+.balloon::before{
+  position: absolute;
+  content: "";
+  margin-left: -10px;
+  width: 0;
+  height: 0;
+  left: 50%;
+  top: 0;
+  opacity: 0;
+  border-top:10px solid #333;
+  border-left:10px solid transparent;
+  border-right:10px solid transparent;
+  transition:all .1s linear .25s;
+}
+
+.balloon1::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  left: 0;
+  top: 30%;
+  opacity: 0;
+  border-top:10px solid transparent;
+  border-left:10px solid #333;
+  border-bottom:10px solid transparent;
+  transition:all .1s linear .25s;
+}
+
+.balloon2::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  left: 95%;
+  top: 30%;
+  opacity: 0;
+  border-top:10px solid transparent;
+  border-right:10px solid #333;
+  border-bottom:10px solid transparent;
+  transition:all .1s linear .25s;
+}
+
+.balloon:hover::after {
+  top:-165px;
+  opacity: 1;
+}
+
+.balloon:hover::before {
+  top: -15px;
+  opacity: 1;
+}
+
+.balloon1:hover::after {
+  left: -90%;
+  opacity: 1;
+}
+
+.balloon1:hover::before {
+  opacity: 1;
+  left: -10%;
+}
+
+.balloon2:hover::after {
+  left: 193%;
+  opacity: 1;
+}
+
+.balloon2:hover::before {
+  left: 105%;
+  opacity: 1;
+}
+
+.balloon:hover,
+.balloon1:hover,
+.balloon2:hover {
+  background-color: rgb(201, 63, 13);
+}
