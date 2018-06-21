@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>jiefangcheng</title>
+</head>
+
+<body>
+  <script>
+    var a = +prompt("一元二次方程a:"),
+        b = +prompt("一元二次方程b:"),
+        c = +prompt("一元二次方程c:");
+
+    var delta = b * b - 4 * a * c,
+       delta_re = 4 * a * c - b * b;
+    var s_delta = Math.sqrt(delta),
+        i_delta = Math.sqrt(delta_re);
+
+    var x1, x2;
+
+    if (delta > 0) {
+      x1 = (-b + s_delta) / (2 * a);
+      x2 = (-b - s_delta) / (2 * a);
+    } else if (delta == 0) {
+      x1 = x2 = -(b / (2 * a));
+    } else if (delta <  0) {
+      x1 =  (-b + i_delta) / (2 * a) + "i";
+      x2 =  (-b - i_delta) / (2 * a) + "i";
+    } else {
+      console.log("请重新输入");
+    }
+
+    console.log(x1);
+    console.log(x2);
+
+    // 二元一次方程
+    var a1 = Number(prompt("二元一次方程a:")),
+         b1 = Number(prompt("二元一次方程b:")),
+         m1 = Number(prompt("二元一次方程m:")),
+         c1 = Number(prompt("二元一次方程c:")),
+         d1 = Number(prompt("二元一次方程d:")),
+         n1 = Number(prompt("二元一次方程n:"));
+
+    var x3,y3;
+
+    if(a1/c1 != b1/d1) {
+      x3 = (m1 * d1 - b1 * n1 ) / (a1 * d1 - b1 * c1 ) ;
+      y3 = (m1 * c1 - a1 * n1 ) / (b1 * c1 - a1 * d1 ) ;
+      console.log(x3);
+      console.log(y3);
+    }else if(a1/c1 == b1/d1 && b1/d1 == m1/n1) {
+      console.log("有无穷个解");
+    }else if(a1/c1 == b1/d1 && b1/d1 != m1/n1) {
+      console.log("无解");
+    }else {
+      console.log("请重新输入");
+    }
+
+  </script>
+</body>
+
+</html>
