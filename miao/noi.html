@@ -38,8 +38,10 @@
     <script id="ch0103/04">
         var a = parseInt(Number(prompt('请输入被除数整数a')))
         var b = parseInt(Number(prompt('请输入非零除数整数b')))
-        var num1 = parseInt(a / b)
-        var num2 = a % b
+        if (b != 0) {
+            var num1 = parseInt(a / b)
+            var num2 = a % b
+        }
         console.log(num1, num2);
     </script>
     <script id="ch0103/05">
@@ -51,8 +53,9 @@
     <script id="ch0103/06">
         var a = parseInt(Number(prompt('请输入确诊数')))
         var b = parseInt(Number(prompt('请输入死亡数')))
-        var num = b / a
-        console.log(num.toFixed(3) * 100 + '%')
+        var num = (b / a) * 100
+        var num2 = num.toFixed(3)
+        console.log(num2 + '%')
     </script>
     <script id="ch0103/07">
         var x = Number(prompt('请输入绝对值不超过100的值x'))
@@ -84,7 +87,7 @@
             var dia = 2 * r
             var peri = 2 * r * pi
             var area = pi * r * r
-            console.log(dia.toFixed(4), peri.toFixed(4), area.toFixed(4))
+            console.log(dia.toFixed(4),peri.toFixed(4),area.toFixed(4))
         }
     </script>
     <script id="ch0103/10">
@@ -99,7 +102,7 @@
         var num = a % b
         console.log(num.toFixed(4))
     </script>
-    <script id="ch0103/11">
+    <script id="ch0103/12">
         var r = Number(prompt('请输入球的半径r'))
         if (r < 100 && r >= 0) {
             var v = (4 / 3) * 3.14 * r ** 3
@@ -486,8 +489,7 @@
             var x1 = (-b / (2 * a)).toFixed(5) + "+" + (rDelta / (2 * a)).toFixed(5) + 'i'
             var x2 = (-b / (2 * a)).toFixed(5) + "-" + (rDelta / (2 * a)).toFixed(5) + 'i'
         }
-        console.log(x1)
-        console.log(x2)
+        console.log(x1,x2)
     </script>
     <script id="ch0104/21">
         var n = parseInt(Number(prompt('请输入有几个苹果')))
@@ -507,14 +509,16 @@
             var a = parseInt(Number(prompt('请输入学生年龄')))
             count += a
         }
-        console.log(count / n)
+        var num = count / n
+        console.log(num.toFixed(2))
     </script>
     <script id="ch0105/02">
         var count = 0
         for (var i = 1; i <= 12; i++) {
-            var n = parseInt(Number(prompt('请输入第' + i + '月结余')))
-            var m = n
-            count += n
+            var n = Number(prompt('请输入第' + i + '月结余'))
+            var m = Number(n.toFixed(2))
+            console.log(m)
+            count += m
             console.log(count)
         }
         var num = (count / 12).toFixed(2)
@@ -541,8 +545,9 @@
         } else {
             console.log('1 <= n <= 10000')
         }
-        var num = count / n
-        console.log(count, num.toFixed(5))
+        var num = (count / n).toFixed(5)
+        var num2 = parseFloat(num)
+        console.log(count,num2)
     </script>
     <script id="ch0105/05">
         var n = parseInt(Number(prompt('请输入考试人数')))
@@ -595,7 +600,7 @@
             console.log('1≤n≤17')
         }
         var count = numA + numB + numC
-        console.log(numA, numB, numC, count)
+        console.log(numA,numB,numC,count)
     </script>
     <script id="ch0105/08">
         var n = parseInt(Number(prompt('请输入为几边形')))
