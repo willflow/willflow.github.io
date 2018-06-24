@@ -500,6 +500,142 @@
             console.log('输入数据保证y <= n * x')
         }
     </script>
+    <script id="ch0105/01">
+        var n = parseInt(Number(prompt('请输入有位学生')))
+        var count = 0
+        for (var i = 0; i < n; i++) {
+            var a = parseInt(Number(prompt('请输入学生年龄')))
+            count += a
+        }
+        console.log(count / n)
+    </script>
+    <script id="ch0105/02">
+        var count = 0
+        for (var i = 1; i <= 12; i++) {
+            var n = parseInt(Number(prompt('请输入第' + i + '月结余')))
+            var m = n
+            count += n
+            console.log(count)
+        }
+        var num = (count / 12).toFixed(2)
+        console.log('$' + num)
+    </script>
+    <script id="ch0105/03">
+        var n = parseInt(Number(prompt('请输入容量')))
+        var count = 0
+        for (var i = 0; i < n; i++) {
+            var a = parseInt(Number(prompt('请输入数据')))
+            count += a
+        }
+        var num = (count / n).toFixed(4)
+        console.log(num)
+    </script>
+    <script id="ch0105/04">
+        var n = parseInt(Number(prompt('请输入有几个整数')))
+        var count = 0
+        if (n >= 1 && n <= 10000) {
+            for (var i = 1; i <= n; i++) {
+                var a = parseInt(Number(prompt('请输入整数')))
+                count += a
+            }
+        } else {
+            console.log('1 <= n <= 10000')
+        }
+        var num = count / n
+        console.log(count, num.toFixed(5))
+    </script>
+    <script id="ch0105/05">
+        var n = parseInt(Number(prompt('请输入考试人数')))
+        var a = [1]
+        if (n >= 1 && n < 100) {
+            for (var i = 0; i < n; i++) {
+                var num = parseInt(Number(prompt('请输入考试成绩')))
+                if (num > a[0]) {
+                    a[0] = num
+                }
+            }
+        } else {
+            console.log('1 <= n < 100')
+        }
+        console.log(a[0])
+    </script>
+    <script id="ch0105/06">
+        var n = parseInt(Number(prompt('请输入序列数')))
+        var a = [1, 2]
+        if (n >= 1 && n <= 1000) {
+            for (var i = 0; i < n; i++) {
+                var num = parseInt(Number(prompt('请输入整数')))
+                if (num > a[0]) {
+                    a[0] = num
+                }
+                if (num < a[1]) {
+                    a[1] = num
+                }
+            }
+        } else {
+            console.log('1 <= n < 1000')
+        }
+        console.log(a[0] - a[1])
+    </script>
+    <script id="ch0105/07">
+        var day = parseInt(Number(prompt('请输入天数')))
+        var numA = 0
+        var numB = 0
+        var numC = 0
+        if (day >= 1 && day <= 17) {
+            for (var i = 1; i <= day; i++) {
+                var a = parseInt(Number(prompt('请输入第' + i + '天金牌数')))
+                var b = parseInt(Number(prompt('请输入第' + i + '天银牌数')))
+                var c = parseInt(Number(prompt('请输入第' + i + '天铜牌数')))
+                numA += a
+                numB += b
+                numC += c
+            }
+        } else {
+            console.log('1≤n≤17')
+        }
+        var count = numA + numB + numC
+        console.log(numA, numB, numC, count)
+    </script>
+    <script id="ch0105/08">
+        var n = parseInt(Number(prompt('请输入为几边形')))
+        var count = (n - 2) * 180
+        for (var i = 1; i < n; i++) {
+            var a = parseInt(Number(prompt('请输入角度')))
+            count -= a
+        }
+        console.log(count)
+    </script>
+    <script id="ch0105/09">
+        var m = parseInt(Number(prompt('请输入m值')))
+        var n = parseInt(Number(prompt('请输入n值')))
+        var count = 0
+        if ((m >= 0 && m <= n) && (n >= m && n <= 300)) {
+            for (var i = m; i <= n; i++) {
+                if (i % 2 == 1) {
+                    count += i
+                }
+            }
+        } else {
+            console.log('0 <= m <= n <= 300 ')
+        }
+        console.log(count)
+    </script>
+    <script id="ch0105/10">
+        var m = parseInt(Number(prompt('请输入m值')))
+        var n = parseInt(Number(prompt('请输入n值')))
+        var count = 0
+        if ((m > 0 && m < n) && (n > m && n < 1000)) {
+            for (var i = m; i <= n; i++) {
+                if (i % 17 == 0) {
+                    count += i
+                }
+            }
+        } else {
+            console.log('0 <= m <= n <= 300 ')
+        }
+        console.log(count)
+    </script>
 </body>
 
 </html>
