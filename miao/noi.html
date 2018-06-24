@@ -536,18 +536,12 @@
     </script>
     <script id="ch0105/04">
         var n = parseInt(Number(prompt('请输入有几个整数')))
+
         var count = 0
-        if (n >= 1 && n <= 10000) {
-            for (var i = 1; i <= n; i++) {
-                var a = parseInt(Number(prompt('请输入整数')))
-                count += a
-            }
-        } else {
-            console.log('1 <= n <= 10000')
+        for (var i = 0; i < n; i++) {
+            count += parseInt(Number(prompt('请输入整数')))
         }
-        var num = (count / n).toFixed(5)
-        var num2 = parseFloat(num)
-        console.log(count + ' ' + num2)
+        console.log(count + ' ' + (count / n).toFixed(5))
     </script>
     <script id="ch0105/05">
         var n = parseInt(Number(prompt('请输入考试人数')))
