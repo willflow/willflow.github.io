@@ -39,5 +39,22 @@ var willflow = {
     }
     result = array
     return result
+  },
+  drop: function(array,n){
+    let result = []
+    if(n == undefined) n = 1
+    for(let i = n; i < array.length; i++){
+      result.push(array[i])
+    }
+    return result
+  },
+  dropright: function(array,n){
+    let result = []
+    if(n == undefined) n = 1
+    array.reverse()
+    for(let i = n; i <array.length ; i++){
+      result.unshift(array[i])
+    }
+    return result
   }
 }
