@@ -84,5 +84,8 @@ var willflow = {
     let len = array.length
     array.length = len - 1
     return array
+  },
+  lasr: function(array){
+    return array[array.length - 1]
   }
 }
