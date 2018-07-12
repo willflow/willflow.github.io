@@ -68,9 +68,6 @@ var willflow = {
     }
     return array
   },
-  flatten: function(array){
-
-  },
   head: function(array){
     return array[0]
   },
