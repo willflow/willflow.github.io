@@ -141,4 +141,14 @@ var willflow = {
     }
     return array
   },
+  reverse: function(array){
+    let len = array.length
+    for(let i = 0; i < len-1; i++){
+      let a = array[i]
+      let b = array[len-(1+i)]
+      array[len-(1 + i)] = a
+      array[i] = b
+    }
+    return array
+  }
 }
