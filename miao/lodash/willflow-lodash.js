@@ -61,11 +61,31 @@ var willflow = {
     return result
   },
   fill: function(array,value,start,end){
-    let start = start || 0
-    let end = array.length
+    var start = start || 0
+    var end = array.length
     for(let i = start; i < end; i++){
       array[i] = value
     }
+    return array
+  },
+  flatten: function(array){
+
+  },
+  head: function(array){
+    return array[0]
+  },
+  indexOf: function(array,value,fromindex){
+    var fromindex = fromindex || 0
+    for(let i = fromindex; i < array.length; i++){
+      if(array[i] == value){
+        return i
+      }
+    }
+    return -1
+  },
+  initial: function(array){
+    let len = array.length
+    array.length = len - 1
     return array
   }
 }
