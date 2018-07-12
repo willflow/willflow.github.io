@@ -13,5 +13,13 @@ var willflow = {
     result.push(ary1)
     result.push(ary2)
     return result
+  },
+  compact: function(array){
+    let len = array.length
+    let result = []
+    for(let i = 0; i < len; i++){
+      if(Boolean(array[i]) == true) result.push(array[i])
+    }
+    return result
   }
 }
