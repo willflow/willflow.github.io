@@ -40,6 +40,9 @@ var willflow = {
     result = array
     return result
   },
+  differenceBy: function(array,values,iteratee){
+
+  },
   drop: function(array,n){
     let result = []
     if(n == undefined) n = 1
@@ -48,7 +51,7 @@ var willflow = {
     }
     return result
   },
-  dropright: function(array,n){
+  dropRight: function(array,n){
     let result = []
     if(n == undefined) n = 1
     array.reverse()
@@ -56,5 +59,13 @@ var willflow = {
       result.unshift(array[i])
     }
     return result
+  },
+  fill: function(array,value,start,end){
+    let start = start || 0
+    let end = array.length
+    for(let i = start; i < end; i++){
+      array[i] = value
+    }
+    return array
   }
 }
