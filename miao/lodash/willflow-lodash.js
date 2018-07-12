@@ -105,7 +105,7 @@ var willflow = {
       return array[n]
     } else {
       array.reverse()
-      n = (-n) + 1
+      n = (-n) - 1
       return array[n]
     }
   },
