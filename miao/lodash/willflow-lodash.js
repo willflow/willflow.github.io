@@ -162,7 +162,9 @@ var willflow = {
       return a - b
     })
     for(let i = 0; i < ary.length; i++){
-      if(ary[i] == value) return i
+      if(ary[i] == value){
+        return i
+      }
     }
   }
 }
