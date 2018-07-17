@@ -242,30 +242,30 @@ var willflow = {
     }
     return array
   },
-  flatten: function(array){
-    let result = [].concat.apply([],array)
+  flatten: function (array) {
+    let result = [].concat.apply([], array)
     return result
   },
   flattenDeep: function (arr) {
     let result = []
-    for(let i = 0, len = arr.length; i < len; i++){
-        if(Array.isArray(arr[i])){
-            result = result.concat(flattenDeep(arr[i]))
-        }else{
-            result.push(arr[i])
-        }
+    for (let i = 0, len = arr.length; i < len; i++) {
+      if (Array.isArray(arr[i])) {
+        result = result.concat(flattenDeep(arr[i]))
+      } else {
+        result.push(arr[i])
+      }
     }
     return result
   },
-  intersection: function(arrays){
+  intersection: function (arrays) {
     let result = []
     let ary = []
-    for(let i = 1; i < arguments.length; i++){
+    for (let i = 1; i < arguments.length; i++) {
       ary = ary.concat(arguments[i])
     }
-    for(let i = 0; i < arguments[0].length; i++){
-      for(let j = 0; j < ary.length; j++){
-        if(arguments[0][i] == ary[j]){
+    for (let i = 0; i < arguments[0].length; i++) {
+      for (let j = 0; j < ary.length; j++) {
+        if (arguments[0][i] == ary[j]) {
           result.push(arguments[0][i])
         }
       }
@@ -283,8 +283,8 @@ var willflow = {
     }
     return result
   },
-  sortedUniqBy: function (array,iteratee) {
-    let ary = array.map(function(item){
+  sortedUniqBy: function (array, iteratee) {
+    let ary = array.map(function (item) {
       return iteratee(item)
     })
     let ary3 = []
@@ -298,22 +298,37 @@ var willflow = {
         ary2.push(i)
       }
     }
-    for(let i = 0; i < ary2.length; i++){
+    for (let i = 0; i < ary2.length; i++) {
       result.push(array[ary2[i]])
     }
     return result
   },
-  tail: function(array){
-    for(let i = 0; i < 1; i++){
+  tail: function (array) {
+    for (let i = 0; i < 1; i++) {
       array.shift()
     }
     return array
   },
-  take: function(array,n){
+  take: function (array, n) {
     var n = n || 1
     let result = []
-    for(let i = 0; i < n; i++){
+    for (let i = 0; i < n; i++) {
       result.push(array[i])
+    }
+    return result
+  },
+  flattenDepth: function (array, depth) {
+    var depth = depth || 1
+    let result = []
+    if (depth == 1) {
+      result = [].concat.apply([], array)
+    }
+    for (let i = 0; i < depth; i++) {
+      if (Array.isArray(array[i])) {
+        result = result.concat(flattenDepth(array[i]))
+      } else {
+        result.push(array[i])
+      }
     }
     return result
   }
