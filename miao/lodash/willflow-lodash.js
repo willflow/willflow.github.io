@@ -247,5 +247,20 @@ var willflow = {
       array = [].concat.apply([], arr)
     }
     return array
+  },
+  intersection: function(arrays){
+    let result = []
+    let ary = []
+    for(let i = 1; i < arguments.length; i++){
+      ary = ary.concat(arguments[i])
+    }
+    for(let i = 0; i < arguments[0].length; i++){
+      for(let j = 0; j < ary.length; j++){
+        if(arguments[0][i] == ary[j]){
+          result.push(arguments[0][i])
+        }
+      }
+    }
+    return result
   }
 }
