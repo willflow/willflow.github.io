@@ -250,7 +250,7 @@ var willflow = {
     let result = []
     for(let i = 0, len = arr.length; i < len; i++){
         if(Array.isArray(arr[i])){
-            result = result.concat(flatten(arr[i]))
+            result = result.concat(flattenDeep(arr[i]))
         }else{
             result.push(arr[i])
         }
@@ -300,6 +300,20 @@ var willflow = {
     }
     for(let i = 0; i < ary2.length; i++){
       result.push(array[ary2[i]])
+    }
+    return result
+  },
+  tail: function(array){
+    for(let i = 0; i < 1; i++){
+      array.shift()
+    }
+    return array
+  },
+  take: function(array,n){
+    var n = n || 1
+    let result = []
+    for(let i = 0; i < n; i++){
+      result.push(array[i])
     }
     return result
   }
