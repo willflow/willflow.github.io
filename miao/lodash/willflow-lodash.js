@@ -246,7 +246,7 @@ var willflow = {
     let result = [].concat.apply([], array)
     return result
   },
-  flattenDeep: function (arr) {
+  flattenDeep: function flattenDeep(arr) {
     let result = []
     for (let i = 0, len = arr.length; i < len; i++) {
       if (Array.isArray(arr[i])) {
@@ -317,7 +317,7 @@ var willflow = {
     }
     return result
   },
-  flattenDepth: function (array, depth) {
+  flattenDepth: function flattenDepth(array, depth) {
     var depth = depth || 1
     let result = []
     if (depth == 1) {
