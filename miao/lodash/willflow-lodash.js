@@ -242,11 +242,20 @@ var willflow = {
     }
     return array
   },
-  flatten: function (array) {
-    while (array.some(item => Array.isArray(item))) {
-      array = [].concat.apply([], arr)
+  flatten: function(array){
+    let result = [].concat.apply([],array)
+    return result
+  },
+  flattenDeep: function (arr) {
+    let result = []
+    for(let i = 0, len = arr.length; i < len; i++){
+        if(Array.isArray(arr[i])){
+            result = result.concat(flatten(arr[i]))
+        }else{
+            result.push(arr[i])
+        }
     }
-    return array
+    return result
   },
   intersection: function(arrays){
     let result = []
@@ -260,6 +269,37 @@ var willflow = {
           result.push(arguments[0][i])
         }
       }
+    }
+    return result
+  },
+  sortedUniq: function (array) {
+    let result = []
+    for (let i = 0; i < array.length; i++) {
+      if (result.includes(array[i])) {
+        continue
+      } else {
+        result.push(array[i])
+      }
+    }
+    return result
+  },
+  sortedUniqBy: function (array,iteratee) {
+    let ary = array.map(function(item){
+      return iteratee(item)
+    })
+    let ary3 = []
+    let ary2 = []
+    let result = []
+    for (let i = 0; i < ary.length; i++) {
+      if (ary3.includes(ary[i])) {
+        continue
+      } else {
+        ary3.push(ary[i])
+        ary2.push(i)
+      }
+    }
+    for(let i = 0; i < ary2.length; i++){
+      result.push(array[ary2[i]])
     }
     return result
   }
