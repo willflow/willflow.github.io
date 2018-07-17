@@ -198,9 +198,8 @@ var willflow = {
     for(let i = 0; i < len; i++){
       if(array[i] === value){
         return i
-      }else{
-        return -1
       }
+      return -1
     }
   },
   sortedLastIndex: function(array,value){
@@ -225,7 +224,7 @@ var willflow = {
     let result = []
     for(let i = 0; i < array.length; i++){
       if(result.includes(array[i])){
-        break
+        continue
       }else {
         result.push(array[i])
       }
