@@ -168,77 +168,83 @@ var willflow = {
       }
     }
   },
-  fromPairs: function(pairs){
+  fromPairs: function (pairs) {
     let list = {}
     for (let i = 0; i < pairs.length; i++) {
-        for (let j = 0; j < pairs[i].length; j++) {
-            list[pairs[i][j]] = pairs[i][j + 1]
-            j++
-        }
+      for (let j = 0; j < pairs[i].length; j++) {
+        list[pairs[i][j]] = pairs[i][j + 1]
+        j++
+      }
     }
     return list
   },
-  negate: function(predicate){
-    return function(...arguments){
+  negate: function (predicate) {
+    return function (...arguments) {
       return !predicate(...arguments)
     }
   },
-  sum: function(array){
+  sum: function (array) {
     let sum = 0
-    for(let i = 0; i< array.length; i++){
+    for (let i = 0; i < array.length; i++) {
       sum += array[i]
     }
     return sum
   },
-  subtract: function(minuend,subtrahend){
+  subtract: function (minuend, subtrahend) {
     return minuend - subtrahend
   },
-  sortedIndexOf: function(array,value){
+  sortedIndexOf: function (array, value) {
     let len = array.length
-    for(let i = 0; i < len; i++){
-      if(array[i] === value){
-        return i
-      }
-      return -1
-    }
-  },
-  sortedLastIndex: function(array,value){
-    let len = array.length
-    for(let i = len - 1; i > 0; i--){
-      if(array[i] === value){
-        i += 1
-        return i
-      }
-    }
-  },
-  sortedLastIndexOf: function(array, value){
-    let len = array.length
-    for(let i = len - 1; i > 0; i--){
-      if(array[i] === value){
+    for (let i = 0; i < len; i++) {
+      if (array[i] === value) {
         return i
       }
     }
     return -1
   },
-  uniq: function(array){
+  sortedLastIndex: function (array, value) {
+    let len = array.length
+    for (let i = len - 1; i > 0; i--) {
+      if (array[i] === value) {
+        i += 1
+        return i
+      }
+    }
+  },
+  sortedLastIndexOf: function (array, value) {
+    let len = array.length
+    for (let i = len - 1; i > 0; i--) {
+      if (array[i] === value) {
+        return i
+      }
+    }
+    return -1
+  },
+  uniq: function (array) {
     let result = []
-    for(let i = 0; i < array.length; i++){
-      if(result.includes(array[i])){
+    for (let i = 0; i < array.length; i++) {
+      if (result.includes(array[i])) {
         continue
-      }else {
+      } else {
         result.push(array[i])
       }
     }
     return result
   },
-  reverse: function(array){
+  reverse: function (array) {
     let len = array.length
-    for(let i = 0; i < len * 2; i++){
+    for (let i = 0; i < len * 2; i++) {
       array.unshift(array[i])
       i++
     }
-    for(let i = 0; i < len; i++){
+    for (let i = 0; i < len; i++) {
       array.pop()
+    }
+    return array
+  },
+  flatten: function (array) {
+    while (array.some(item => Array.isArray(item))) {
+      array = [].concat.apply([], arr)
     }
     return array
   }
