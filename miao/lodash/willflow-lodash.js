@@ -321,14 +321,14 @@ var willflow = {
     var depth = depth || 1
     let result = []
     if (depth == 1) {
-      result = [].concat.apply([], array)
+        return result = [].concat.apply([], array)
     }
     for (let i = 0; i < depth; i++) {
-      if (Array.isArray(array[i])) {
-        result = result.concat(flattenDepth(array[i]))
-      } else {
-        result.push(array[i])
-      }
+        if (Array.isArray(array[i])) {
+            result = result.concat(flattenDepth(array[i]))
+        } else {
+            result.push(array[i])
+        }
     }
     return result
   }
