@@ -358,5 +358,37 @@ var willflow = {
       }
     }
     return result
+  },
+  differenceWith: function(array,values,comparator){
+
+  },
+  union: function(array){
+    let ary = arguments[0]
+    let ary2 = []
+    for(let i = 1; i <arguments.length; i++){
+      ary2 = ary2.concat(arguments[i])
+    }
+    for(let i = 0; i < ary2.length; i++){
+      if(!ary.includes(ary2[i])){
+        ary.push(ary2[i])
+      }
+    }
+    return ary
+  },
+  unionBy: function(array,values,iteratee){
+    let arys = this.identity(array,iteratee)
+    let val = this.identity(values,iteratee)
+    let ary1 = []
+    for(let i = 0; i < val.length; i++){
+      if(!arys.includes(val[i])){
+        ary.push(val[i])
+        ary1.push(i)
+      }
+    }
+    let result = Array.from(array)
+    for(let i = 0; i < ary1.length; i++){
+      result.push(values[ary1[i]])
+    }
+    return result
   }
 }
