@@ -390,5 +390,12 @@ var willflow = {
       result.push(values[ary1[i]])
     }
     return result
+  },
+  sumBy: function(array,iteratee){
+    let result = 0
+    for(let i = 0; i < array.length;i++){
+      result += iteratee(array[i])
+    }
+    return result
   }
 }
