@@ -331,5 +331,30 @@ var willflow = {
         }
     }
     return result
+  },
+  differenceBy: function(array, values, iteratee){
+    let arys = this.identity(array,iteratee)
+    let val = this.identity(values,iteratee)
+    let count
+    for(let i = 0; i < arys.length; i++){
+      if(!val.includes(arys[i])){
+        count = i
+      }
+    }
+    return array[count]
+  },
+  identity: function(ary,value){
+    let result = []
+    if(typeof value == 'function'){
+      for(let i = 0; i < ary.length;i++){
+        result.push(value(ary[i]))
+      }
+    }
+    if(typeof value == 'string'){
+      for(let i = 0; i < ary.length;i++){
+        result.push(ary[i][value])
+      }
+    }
+    return result
   }
 }
