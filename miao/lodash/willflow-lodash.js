@@ -443,4 +443,23 @@ var willflow = {
       }
     }
   },
+  zip: function(arrays){
+    let result = []
+    let ary1 = []
+    let ary2 = []
+    let ary3 = []
+    for(let i = 0; i < arguments.length; i++){
+      result = result.concat(arguments[i])
+    }
+    for(let i = 0; i < result.length; i++){
+      if(i % 2 == 0){
+        ary1.push(result[i])
+      }else{
+        ary2.push(result[i])
+      }
+    }
+    ary3.push(ary1)
+    ary3.push(ary2)
+    return ary3
+  },
 }
