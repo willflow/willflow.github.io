@@ -309,13 +309,14 @@ var willflow = {
     }
     return array
   },
-  take: function (array, n) {
-    var n = n || 1
-    let result = []
-    for (let i = 0; i < n; i++) {
-      result.push(array[i])
+  take: function (array, n = 1) {
+    return array.slice(0, n)
+  },
+  takeRight: function(array,n = 1){
+    if((array.length - n) < 0){
+      return array.slice()
     }
-    return result
+    return array.slice(array.length - n)
   },
   flattenDepth: function flattenDepth(array, depth) {
     var depth = depth || 1
@@ -397,5 +398,39 @@ var willflow = {
       result += iteratee(array[i])
     }
     return result
+  },
+  join: function(array,separator = ','){
+    let len = array.length
+    let str = ''
+    for(let i = 0; i < len-1; i++){
+      str += array[i]+separator
+    }
+    str += array[len - 1]
+    return str
+  },
+  slice: function(array, start = 0, end = array.length){
+    let result = []
+    for(let i = start; i < end; i++){
+      result.push(array[i])
+    }
+    return result
+  },
+  sortedIndexBy: function(array,values,iteratee){
+    let arys = this.identity(array,iteratee)
+    let val = this.identity(values,iteratee)
+    for(let i = 0; i < val.length; i++){
+      if(arys.includes(val[i])){
+        return i
+      }
+    }
+  },
+  sortedLastIndexBy: function(array,values,iteratee){
+    let arys = this.identity(array,iteratee)
+    let val = this.identity(values,iteratee)
+    for(let i = arys.length - 1; i > 0; i--){
+      if(val.includes(arys[i])){
+        return i
+      }
+    }
   }
 }
