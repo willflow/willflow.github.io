@@ -378,6 +378,20 @@ var willflow = {
     }
     return result
   },
+  identity: function(ary,value){
+    let result = []
+    if(typeof value == 'function'){
+      for(let i = 0; i < ary.length;i++){
+        result.push(value(ary[i]))
+      }
+    }
+    if(typeof value == 'string'){
+      for(let i = 0; i < ary.length;i++){
+        result.push(ary[i][value])
+      }
+    }
+    return result
+  },
   sumBy: function(array,iteratee){
     let result = 0
     for(let i = 0; i < array.length;i++){
@@ -403,9 +417,14 @@ var willflow = {
   },
   sortedIndexBy: function(array,values,iteratee){
     let arys = this.identity(array,iteratee)
-    let val = this.identity(values,iteratee)
-    for(let i = 0; i < val.length; i++){
-      if(arys.includes(val[i])){
+    let val
+    if(typeof iteratee == 'function'){
+      val = iteratee(values)
+    }else{
+      val = values[iteratee]
+    }
+    for(let i = 0; i < arys.length; i++){
+      if(arys[i] == val){
         return i
       }
     }
@@ -418,19 +437,5 @@ var willflow = {
         return i
       }
     }
-  },
-  identity: function(ary,value){
-    let result = []
-    if(typeof value == 'function'){
-      for(let i = 0; i < ary.length;i++){
-        result.push(value(ary[i]))
-      }
-    }
-    if(typeof value == 'string'){
-      for(let i = 0; i < ary.length;i++){
-        result.push(ary[i][value])
-      }
-    }
-    return result
   },
 }
