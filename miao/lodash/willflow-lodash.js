@@ -431,9 +431,14 @@ var willflow = {
   },
   sortedLastIndexBy: function(array,values,iteratee){
     let arys = this.identity(array,iteratee)
-    let val = this.identity(values,iteratee)
+    let val
+    if(typeof iteratee == 'function'){
+      val = iteratee(values)
+    }else{
+      val = values[iteratee]
+    }
     for(let i = arys.length - 1; i > 0; i--){
-      if(val.includes(arys[i])){
+      if(arys[i] == val){
         return i
       }
     }
