@@ -336,12 +336,14 @@ var willflow = {
     let arys = this.identity(array,iteratee)
     let val = this.identity(values,iteratee)
     let count
+    let newAry = []
     for(let i = 0; i < arys.length; i++){
       if(!val.includes(arys[i])){
         count = i
+        newAry.push(array[count])
       }
     }
-    return array[count]
+    return newAry
   },
   identity: function(ary,value){
     let result = []
