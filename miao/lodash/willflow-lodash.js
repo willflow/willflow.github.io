@@ -346,20 +346,6 @@ var willflow = {
     }
     return newAry
   },
-  identity: function(ary,value){
-    let result = []
-    if(typeof value == 'function'){
-      for(let i = 0; i < ary.length;i++){
-        result.push(value(ary[i]))
-      }
-    }
-    if(typeof value == 'string'){
-      for(let i = 0; i < ary.length;i++){
-        result.push(ary[i][value])
-      }
-    }
-    return result
-  },
   differenceWith: function(array,values,comparator){
 
   },
@@ -403,7 +389,7 @@ var willflow = {
     let len = array.length
     let str = ''
     for(let i = 0; i < len-1; i++){
-      str += array[i]+separator
+      str += String(array[i])+String(separator)
     }
     str += array[len - 1]
     return str
@@ -432,5 +418,19 @@ var willflow = {
         return i
       }
     }
-  }
+  },
+  identity: function(ary,value){
+    let result = []
+    if(typeof value == 'function'){
+      for(let i = 0; i < ary.length;i++){
+        result.push(value(ary[i]))
+      }
+    }
+    if(typeof value == 'string'){
+      for(let i = 0; i < ary.length;i++){
+        result.push(ary[i][value])
+      }
+    }
+    return result
+  },
 }
