@@ -381,7 +381,7 @@ var willflow = {
     let ary1 = []
     for(let i = 0; i < val.length; i++){
       if(!arys.includes(val[i])){
-        ary.push(val[i])
+        arys.push(val[i])
         ary1.push(i)
       }
     }
