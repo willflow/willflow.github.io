@@ -477,9 +477,13 @@ var willflow = {
       return values.indexOf(item) == -1
     })
   },
-  xor: function(...arrays){
-    return arrays.filter(function(item){
-       return arrays.indexOf(item) == arrays.lastIndexOf(item)
+  xor: function(arrays){
+    let ary = []
+    for(let i = 0; i < arguments.length; i++){
+      ary = ary.concat(arguments[i])
+    }
+    return ary.filter(function(item){
+      return ary.indexOf(item) == ary.lastIndexOf(item)
     })
   }
 }
