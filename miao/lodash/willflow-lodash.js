@@ -485,5 +485,42 @@ var willflow = {
     return ary.filter(function(item){
       return ary.indexOf(item) == ary.lastIndexOf(item)
     })
+  },
+  size: function(collection){
+    return Object.keys(collection).length
+  },
+  zipObject: function(props,values){
+    let result = {}
+    for(let i = 0; i < props.length; i++){
+      result[props[i]] = values[i]
+    }
+    return result
+  },
+  min: function(array){
+    if(array.length == 0) return undefined
+    array.sort(function(a,b){
+      return a- b
+    })
+    return array[0]
+  },
+  add: function(augend, addend){
+    return augend + addend
+  },
+  divide: function(dividend,divisor){
+    return dividend / divisor
+  },
+  max: function(array){
+    if(array.length == 0) return undefined
+    array.sort(function(a,b){
+      return a - b
+    })
+    return array[array.length - 1]
+  },
+  mean: function(array){
+    reducer = (accumulator, currentValue) => accumulator + currentValu
+    return array.reduce(reducer) / array.length
+  },
+  subtract: function(minuend,subtrahend){
+    return minuend - subtrahend
   }
 }
