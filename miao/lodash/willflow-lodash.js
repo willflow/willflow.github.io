@@ -462,4 +462,24 @@ var willflow = {
     ary3.push(ary2)
     return ary3
   },
+  flip: function(func){
+    return function(...arguments){
+      return func(...arguments.reverse())
+    }
+  },
+  negate: function(func){
+    return function(...arguments){
+      return !func(...arguments)
+    }
+  },
+  without: function(array,...values){
+    return array.filter(function(item){
+      values.indexOf(item) == -1
+    })
+  },
+  xor: function(...arrays){
+    return arrays.filter(function(item){
+      arrays.indexOf(item) == arrays.lastIndexOf(item)
+    })
+  }
 }
