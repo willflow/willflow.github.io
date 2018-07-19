@@ -474,12 +474,12 @@ var willflow = {
   },
   without: function(array,...values){
     return array.filter(function(item){
-      values.indexOf(item) == -1
+      return values.indexOf(item) == -1
     })
   },
   xor: function(...arrays){
     return arrays.filter(function(item){
-      arrays.indexOf(item) == arrays.lastIndexOf(item)
+       return arrays.indexOf(item) == arrays.lastIndexOf(item)
     })
   }
 }
