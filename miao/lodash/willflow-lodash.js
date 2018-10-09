@@ -522,6 +522,13 @@ let lodash = function(){
         return obj[name]
       }
     }
+    function forEach(collection,iteratee){
+
+    }
+    function concat(array,...values){
+      let result = []
+      for()
+    }
 
     return willflow = {
       chunk: chunk,
