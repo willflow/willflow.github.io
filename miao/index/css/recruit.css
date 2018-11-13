@@ -1,0 +1,149 @@
+.recruit-info .title {
+  letter-spacing: 2px;
+  width: 60%;
+  height: .3rem;
+  line-height: .3rem;
+  margin: auto;
+  text-align: center;
+  background: url("../images/home/line@2x.png") center  no-repeat;
+  background-size: 100%;
+}
+
+.recruit-info .info,
+.recruit-info .info-last {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  width: 80%;
+  margin: .3rem auto;
+  height: .44rem;
+  font-size: .32rem;
+}
+
+.recruit-info .info-last {
+  align-items: flex-start;
+  margin-bottom: 1.2rem;
+}
+
+.recruit-info .info p,
+.recruit-info .info-last p {
+  width: 1.28rem;
+  line-height: .44rem;
+  font-weight: bold;
+}
+
+.recruit-info .info input,
+.recruit-info .info-last input {
+  color: #999999;
+}
+
+.recruit-info .info-last .info-img span {
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+  padding-right: .1rem;
+  background-color: #D8D8D8;
+}
+
+.recruit-info .notice {
+  width: 100%;
+  margin: .2rem auto;
+  text-align: center;
+}
+
+.recruit-info .send-info {
+  width: 80%;
+  height: .8rem;
+  margin: auto;
+  border-radius: 0.66rem;
+  text-align: center;
+  line-height: .8rem;
+  font-weight: bold;
+  background: linear-gradient(to bottom,#FFE6A9, #DFBA7E);
+}
+
+.recruit-info .check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: .2rem;
+}
+
+.recruit-info .check span {
+  padding-left: .1rem;
+}
+
+.allmask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(253, 251, 251, 0.8);
+}
+
+.invite-mask {
+  /* display: none; */
+  position: absolute;
+  top: 5.12rem;
+  left: 50%;
+  width: 6.96rem;
+  height: 3.12rem;
+  margin-left: -3.48rem;
+  margin-top: -1.56rem;
+  background-color: #fff;
+  border-radius: 0.14rem;
+  box-shadow: 0 3px 8px 1px #757575;
+  z-index: 99;
+}
+
+.invite-mask .banner {
+  height: 1rem;
+  font-size: .42rem;
+  line-height: 1rem;
+  text-align: center;
+  border-radius: 0.14rem;
+  color:  #DFBA7E;
+  background-clip: padding-box;
+  margin-bottom: .4rem;
+  box-shadow: 0 3px 8px 1px #757575;
+  background: linear-gradient(to right,#333, #555);
+}
+
+.invite-mask .banner span {
+  display: inline-block;
+  width: 100%;
+  height: 1.4rem;
+  background: url(../images/home/card-bg@3x.png) no-repeat;
+  background-size: 100%;
+}
+
+.invite-mask .content {
+  text-align: center;
+  font-size: .24rem;
+}
+
+.invite-mask .content p {
+  text-align: left;
+  padding: 0 .2rem;
+  margin-bottom: .3rem;
+}
+
+.invite-mask .content .know {
+  width: 3.48rem;
+  height: .44rem;
+  line-height: .44rem;
+  text-align: center;
+  font-size: .24rem;
+  border-radius: 0.14rem;
+  box-shadow: 0 3px 8px 1px #adadad;
+  background: linear-gradient(to bottom,#FFE6A9, #DFBA7E);
+}
+
+@media (max-width:320px) {
+    .recruit-info .info,
+    .recruit-info .info-last {
+      width: 96%;
+  }
+}

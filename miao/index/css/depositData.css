@@ -1,0 +1,156 @@
+.start-time {
+  display: flex;
+  width: 94%;
+  margin: auto;
+  align-items: center;
+  font-size: .24rem;
+  justify-content: space-between;
+  margin-bottom: .3rem;
+}
+
+.start-time div {
+  display: flex;
+  align-items: center;
+}
+
+.start-time .searchId {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 2rem;
+  height: .6rem;
+  box-shadow: 0 3px 8px 1px #d6d5d5;
+  border-radius: .14rem;
+  margin:0 .2rem;
+  padding-left: .2rem;
+  background-color: #EEEEEE;
+}
+
+.player-search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 96%;
+  margin: auto;
+  margin-bottom: .4rem;
+  font-size: .32rem;
+}
+
+.player-search .title {
+  width: 1.2rem;
+  height: .6rem;
+  text-align: center;
+  line-height: .6rem;
+  font-size: .32rem;
+}
+
+.player-search .search {
+  width: 1.2rem;
+  height: .6rem;
+  background: linear-gradient(to bottom,#FFE6A9, #DFBA7E);
+  box-shadow: 0 3px 8px 1px #d6d5d5;
+  border-radius: .14rem;
+  text-align: center;
+  line-height: .6rem;
+  font-size: .32rem;
+}
+
+.player-search .searchId {
+  box-sizing: border-box;
+  width: 60%;
+  padding: 0 .4rem;
+  margin: 0 .2rem;
+  height: .6rem;
+  box-shadow: 0 3px 8px 1px #d6d5d5;
+  border-radius: .14rem;
+  background-color: #EEEEEE;
+}
+
+
+.deposit-banner {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 4.8rem;
+  margin: auto;
+  margin-top: .4rem;
+  color: #DEBE81;
+  box-sizing: border-box;
+  background-image: url("../images/home/bg-card-black@2x.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  border-radius: .14rem;
+  padding: .60rem;
+}
+
+.deposit-banner div {
+  margin-bottom: .2rem;
+}
+
+.deposit-banner .send-money {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.deposit-banner .send-money p:first-child {
+  font-size: .72rem;
+}
+
+.deposit-banner .send-money .refersh span {
+  display: inline-block;
+  width: .24rem;
+  height: .24rem;
+  margin-right: .1rem;
+  background: url(../images/home/Shape1@2x.png) center no-repeat;
+  background-size: 100% 100%;
+}
+
+.deposit-banner .apply-money {
+  display: flex;
+  justify-content: space-around;
+}
+
+.deposit-banner .apply-money section p:first-child{
+  margin-bottom: .2rem;
+}
+
+.deposit-banner .apply-money section p:nth-child(2){
+  font-size: .48rem;
+}
+
+.send-title {
+  width: 85%;
+  font-size: .32rem;
+  font-weight: bold;
+  margin: .3rem auto;
+}
+
+.sendInfo {
+  display: flex;
+  width: 100%;
+  margin:auto;
+  box-sizing: border-box;
+  padding: 0 .56rem;
+  justify-content: space-between;
+  align-items: center;
+  height: 1.6rem;
+  font-size: .32rem;
+}
+
+.sendInfo .title {
+  margin-bottom: .2rem;
+}
+
+.sendInfo .gray {
+  color: #999;
+}
+
+.sendInfo .refuse {
+  color: #E7402E;
+}
+
+@media (max-width:320px) {
+  .start-time .searchId {
+    width: 50%;
+  }
+}

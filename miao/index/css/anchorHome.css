@@ -1,0 +1,74 @@
+.main .list .item .item1 {
+  background: url(../images/PhoneHome/提现资料@2x.png) center no-repeat;
+  background-size: 100%;
+}
+
+.main .list .item .item2 {
+  background: url(../images/PhoneHome/靓号@2x.png) center no-repeat;
+  background-size: 100%;
+}
+
+.main .list .item .item3 {
+  background: url(../images/PhoneHome/3\ 提现@2x.png) center no-repeat;
+  background-size: 100%;
+}
+
+.main .list .item .item4 {
+  background: url(../images/PhoneHome/订单@2x.png) center no-repeat;
+  background-size: 100%;
+}
+
+.main .list .item .item5 {
+  background: url(../images/PhoneHome/明细@2x.png) center no-repeat;
+  background-size: 100%;
+}
+
+.main .list .item .item6 {
+  background: url(../images/PhoneHome/收益@2x.png) center no-repeat;
+  background-size: 100%;
+}
+
+.main .list .item .item7 {
+  background: url(../images/PhoneHome/公告@2x.png) center no-repeat;
+  background-size: 100%;
+}
+
+@media (-webkit-min-device-pixel-ratio: 3),(min-device-pixel-ratio: 3) {
+  .header .home-img {
+    background-image: url('../images/home/Shape@3x.png');
+  }
+  .main .list .item .item1 {
+    background: url(../images/PhoneHome/提现资料@3x.png) center no-repeat;
+    background-size: 100%;
+  }
+  
+  .main .list .item .item2 {
+    background: url(../images/PhoneHome/靓号@3x.png) center no-repeat;
+    background-size: 100%;
+  }
+  
+  .main .list .item .item3 {
+    background: url(../images/PhoneHome/3\ 提现@3x.png) center no-repeat;
+    background-size: 100%;
+  }
+  
+  .main .list .item .item4 {
+    background: url(../images/PhoneHome/订单@3x.png) center no-repeat;
+    background-size: 100%;
+  }
+  
+  .main .list .item .item5 {
+    background: url(../images/PhoneHome/明细@3x.png) center no-repeat;
+    background-size: 100%;
+  }
+  
+  .main .list .item .item6 {
+    background: url(../images/PhoneHome/收益@3x.png) center no-repeat;
+    background-size: 100%;
+  }
+  
+  .main .list .item .item7 {
+    background: url(../images/PhoneHome/公告@3x.png) center no-repeat;
+    background-size: 100%;
+  }
+}

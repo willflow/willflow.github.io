@@ -1,0 +1,63 @@
+.dateList ul {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.dateList ul li {
+  width: 1.58rem;
+  height: .6rem;
+  border-radius: .14rem;
+  line-height: .6rem;
+  text-align: center;
+  color: #333333;
+  font-size: .32rem;
+  background-color: #eee;
+  box-shadow: 0 3px 8px 1px #757575;
+}
+
+.dateList-active {
+  background: linear-gradient(to bottom,#FFE6A9, #DFBA7E);
+}
+
+.play-number {
+  display: flex;
+  justify-content: space-between;
+  padding: .40rem 0;
+  font-size: .32rem;
+  color: #333333;
+  font-weight: 550;
+}
+
+.play-detail {
+  display: flex;
+  justify-content: space-between;
+  padding: .40rem .70rem;
+  font-size: .32rem;
+  color: #333333;
+  font-weight: 500;
+}
+
+.play-detail div {
+  position: relative;
+  top: .40rem;
+}
+
+.play-detail div p {
+  padding: .05rem 0;
+}
+
+.play-detail .status {
+  line-height: 1.36rem;
+}
+
+.border-bottom {
+  border: #333333;
+}
+
+.active {
+  color: #47AD69;
+}
+
+.quit {
+  color: #4A90E2;
+}

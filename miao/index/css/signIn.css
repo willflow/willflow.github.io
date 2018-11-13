@@ -1,0 +1,100 @@
+html,body {
+  height: 100%;
+}
+
+.banner {
+  height: 100%;
+  background: url(../images/signIn/Start-page640x960.png) no-repeat;
+  background-size: 100%;
+}
+
+.banner .signIn {
+  position: absolute;
+  left: 50%;
+  bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 6.4rem;
+  height: 3.8rem;
+  margin-left: -3.2rem;
+}
+
+.signIn .title {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  padding: .4rem 0;
+}
+
+.signIn .title p {
+  font-size: .32rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.signIn .title .line {
+  width: 1.2rem;
+  height: .4rem;
+  background: url(../images/signIn/Line\ 3@2x.png) center no-repeat;
+  background-size: 100%;
+}
+
+.signIn .sign-list {
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
+}
+
+.signIn .sign-list ul {
+  display: flex;
+}
+
+.sign-list ul li {
+  text-align: center;
+}
+
+.signIn .sign-list .img {
+  width: 1.6rem;
+  height: 1.34rem;
+  background: url(../images/signIn/icon_微信-logo@2x.png) center no-repeat;
+  background-size: 50%;
+}
+
+.signIn .sign-list .qq {
+  background: url(../images/signIn/qq@2x.png) center no-repeat;
+  background-size: 50%;
+}
+
+.signIn .sign-list .weibo {
+  background: url(../images/signIn/微博\ \(2\)@2x.png) center no-repeat;
+  background-size: 50%;
+}
+
+.signIn .sign-list .phone {
+  background: url(../images/signIn/复制链接@2x.png) center no-repeat;
+  background-size: 30%;
+}
+
+@media (-webkit-min-device-pixel-ratio: 3),(min-device-pixel-ratio: 3) {
+  .signIn .title .line {
+    background: url(../images/signIn/Line\ 3@3x.png) no-repeat;
+    background-size: 100%;
+  }
+  .signIn .sign-list .img {
+    background: url(../images/signIn/icon_微信-logo@3x.png) center no-repeat;
+    background-size: 50%;
+  }
+  .signIn .sign-list .qq {
+    background: url(../images/signIn/qq@3x.png) center no-repeat;
+    background-size: 50%;
+  }
+  .signIn .sign-list .weibo {
+    background: url(../images/signIn/微博\ \(2\)@3x.png) center no-repeat;
+    background-size: 50%;
+  }
+  .signIn .sign-list .phone {
+    background: url(../images/signIn/复制链接@3x.png) center no-repeat;
+    background-size: 30%;
+  }
+}

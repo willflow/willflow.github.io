@@ -1,0 +1,110 @@
+.start-time {
+  display: flex;
+  width: 96%;
+  margin: auto;
+  align-items: center;
+  font-size: .24rem;
+}
+
+.start-time .searchId {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 2rem;
+  height: .6rem;
+  box-shadow: 0 3px 8px 1px #d6d5d5;
+  border-radius: .14rem;
+  margin:0 .2rem;
+  background-color: #EEEEEE;
+}
+
+.start-time .search {
+  display: inline-block;
+  width: 1.1rem;
+  height: .6rem;
+  background: linear-gradient(to bottom,#FFE6A9, #DFBA7E);
+  box-shadow: 0 3px 8px 1px #d6d5d5;
+  border-radius: .14rem;
+  text-align: center;
+  line-height: .6rem;
+  font-size: .32rem;
+}
+
+.dateList ul {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 96%;
+  margin: .4rem auto .6rem;
+}
+
+.dateList ul li {
+  width: 1.76rem;
+  height: .48rem;
+  border-radius: .14rem;
+  line-height: .48rem;
+  text-align: center;
+  color: #333333;
+  font-size: .32rem;
+  background-color: #eee;
+  box-shadow: 0 3px 8px 1px #757575;
+}
+
+.dateList-active {
+  background: linear-gradient(to bottom,#FFE6A9, #DFBA7E);
+}
+
+.count {
+  width: 6.96rem;
+  padding-bottom: .4rem;
+  margin: auto;
+  font-weight: bold;
+  font-size: .32rem;
+}
+
+.play-detail {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: space-between;
+  padding: .40rem .70rem;
+  font-size: .32rem;
+  color: #333333;
+  font-weight: 500;
+}
+
+.play-detail div {
+  position: relative;
+  top: .40rem;
+}
+
+.play-detail div p {
+  padding: .05rem 0;
+}
+
+.play-detail .status {
+  line-height: 1.36rem;
+}
+
+.border-bottom {
+  border: #333333;
+}
+
+.new {
+  position: absolute;
+  width: 8.28rem;
+  bottom: 0;
+  text-align: center;
+  font-size: .24rem;
+}
+
+.new p {
+  width: 8.28rem;
+  height: .6rem;
+  background-color: #EEEEEE;
+  line-height: .6rem;
+}
+
+@media (max-width:320px) {
+  .start-time .searchId {
+    width: 40%;
+  }
+}

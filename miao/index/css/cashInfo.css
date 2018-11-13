@@ -1,0 +1,103 @@
+.account {
+  display: flex;
+  border-radius: 0.14rem;
+  box-shadow: 0 3px 8px 1px #d6d5d5;
+  width: 100%;
+  height: 1rem;
+  margin-bottom: .4rem;
+  background-color: #EEEEEE;
+}
+
+.account p,
+.bindPhone-title .name {
+  width: 2.28rem;
+  box-sizing: border-box;
+  font-size: .32rem;
+  font-weight: bold;
+  line-height: 1rem;
+  padding: 0 .5rem;
+}
+
+.bindPhone {
+  display: flex;
+  font-size: .32rem;
+  margin: .2rem 0 .6rem 0;
+  justify-content: space-around;
+}
+
+.bindPhone-title {
+  display: flex;
+  align-items: center;
+  margin: .4rem 0;
+}
+
+.code {
+  display: flex;
+  width: 100%;
+}
+
+.account-code {
+  display: flex;
+  box-sizing: border-box;
+  border-radius: 0.14rem;
+  box-shadow: 0 3px 8px 1px #d6d5d5;
+  background-color: #EEEEEE;
+  width: 4.6rem;
+  height: 1rem;
+  margin-bottom: .4rem;
+  margin-right: .2rem;
+}
+
+.account-code p {
+  width: .96rem;
+  font-size: .32rem;
+  font-weight: bold;
+  line-height: 1rem;
+  padding:0 .8rem 0 .5rem;
+}
+
+.account input,
+.account-code input {
+  background-color: #EEEEEE;
+}
+
+.account-code .inputCode {
+  width: 1.8rem
+}
+
+.code button {
+  width: 2.2rem;
+  height: 1rem;
+  background: linear-gradient(to bottom,#EEEEEE, #CCCCCC);
+  box-shadow: 0 3px 8px 1px #d6d5d5;
+  border-radius: 0.14rem;
+}
+
+.code .sended{
+  background: #EEEEEE;
+}
+
+.infoBtn {
+  width: 90%;
+  margin: auto;
+  height: .8rem;
+  margin-top: .8rem;
+  text-align: center;
+  line-height: .8rem;
+  border-radius: .66rem;
+  font-weight: bold;
+  background: linear-gradient(to bottom,#FFE6A9, #DFBA7E);
+}
+
+.notice {
+  width: 5rem;
+  margin: auto;
+  margin-top: .4rem;
+}
+
+.notice p {
+  margin: .2rem 0;
+  color: #333333;
+  letter-spacing: 1px;
+  font-weight: bold;
+}

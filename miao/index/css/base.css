@@ -1,0 +1,62 @@
+/* 公共样式 */
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: .50rem;
+  margin-bottom: .40rem;
+}
+
+.header .family-img {
+  display: inline-block;
+  width: .34rem;
+  height: .26rem;
+  background-image: url('../images/home/Shape@2x.png');
+  background-repeat: no-repeat;
+  background-size: .34rem .26rem;
+  vertical-align: top;
+}
+
+.header .family-title {
+  font-size: .24rem;
+  font-weight: 550;
+  color: #333333;
+}
+
+.header .name span:first-child {
+  position: relative;
+  box-sizing: border-box;
+  font-size: .24rem;
+  font-weight: 550;
+  color: #333333;
+}
+
+.dateList ul {
+  display: flex;
+  width: 90%;
+  flex-wrap: nowrap;
+  margin: auto;
+}
+
+.dateList ul li {
+  width: 1.58rem;
+  height: .6rem;
+  border-radius: .14rem;
+  line-height: .6rem;
+  text-align: center;
+  color: #333333;
+  font-size: .32rem;
+  background-color: #eee;
+  box-shadow: 0 3px 8px 1px #757575;
+}
+
+.dateList-active {
+  background: linear-gradient(to bottom,#FFE6A9, #DFBA7E);
+}

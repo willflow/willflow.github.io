@@ -1,0 +1,205 @@
+.sell {
+  display: flex;
+  width: 100%;
+  height: 2.56rem;
+  border-radius: .14rem;
+  background: linear-gradient(to right, #333333 , #555555);
+  box-shadow: 0px 3px 8px #757575;
+}
+
+.sell-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+}
+
+.sell-time {
+  display: flex;
+  justify-content: space-between;
+  color: #DFBA7E;
+  font-size: .2rem;
+}
+
+.sell-time .refresh img {
+  display: inline-block;
+  width: .24rem;
+  height: .24rem;
+  vertical-align: top;
+}
+
+.sell-count {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  color: rgb(252, 220, 138);
+  margin-top: .05rem;
+}
+
+.sell-count .number {
+  font-size: .72rem;
+  font-family: Impact;
+}
+
+.sell-count .rank-up {
+  color: #E7402E;
+  font-size: .32rem;
+}
+
+.sell-count .rank-up span {
+  font-size: .40rem;
+  padding: 0 .02rem;
+  font-weight: 550;
+}
+
+.sell-count .range {
+  width: 2.2rem;
+  font-size: .20rem;
+  color: #ffffff;
+}
+
+.sell-count .range span {
+  color: #DFBA7E;
+}
+
+.sell-container .line {
+  margin-top: .1rem;
+  border-radius: .04rem;
+  border: 2px solid #ccc;
+}
+
+.sell-container .explain {
+  width: .96rem;
+  margin: auto;
+  margin-top: .2rem;
+  font-size: .24rem;
+  color: #ccc;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+}
+
+.main {
+  display: flex;
+  width: 100%;
+  margin-top: .4rem
+}
+
+.main .list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main .list .item {
+  display: flex;
+  width: 33%;
+  flex-direction: column;
+  box-sizing: border-box;
+  height: 2.4rem;
+  text-align: center;
+}
+
+.main .list .item div {
+  width: 100%;
+  height: 1.6rem;
+}
+
+.main .list .item p {
+  padding-top: .1rem;
+  font-size: .32rem;
+  font-weight: 550;
+}
+
+.main .list .item .item1 {
+  background: url(../images/home/代客充值@2x.png) center no-repeat;
+  background-size: 100%;
+}
+
+.main .list .item .item2 {
+  background: url(../images/home/靓号@2x.png) center no-repeat;
+  background-size: 100%;
+}
+
+.main .list .item .item3 {
+  background: url(../images/home/借款@2x.png) center no-repeat;
+  background-size: 100%;
+}
+
+.main .list .item .item4 {
+  background: url(../images/home/提现资料@2x.png) center no-repeat;
+  background-size: 100%;
+}
+
+.main .list .item .item5 {
+  background: url(../images/home/订单@2x.png) center no-repeat;
+  background-size: 100%;
+}
+
+.main .list .item .item6 {
+  background: url(../images/home/明细@2x.png) center no-repeat;
+  background-size: 100%;
+}
+
+.main .list .item .item7 {
+  background: url(../images/home/收益@2x.png) center no-repeat;
+  background-size: 100%;
+}
+
+.main .list .item .item8 {
+  background: url(../images/home/支付密码@2x.png) center no-repeat;
+  background-size: 100%;
+}
+
+.main .list .item .item9 {
+  background: url(../images/home/公告@2x.png) center no-repeat;
+  background-size: 100%;
+}
+
+@media (-webkit-min-device-pixel-ratio: 3),(min-device-pixel-ratio: 3) {
+  .header .home-img {
+    background-image: url('../images/home/Shape@3x.png');
+  }
+  .main .list .item .item1 {
+    background: url(../images/home/代客充值@3x.png) center no-repeat;
+    background-size: 100%;
+  }
+  
+  .main .list .item .item2 {
+    background: url(../images/home/靓号@3x.png) center no-repeat;
+    background-size: 100%;
+  }
+  
+  .main .list .item .item3 {
+    background: url(../images/home/借款@3x.png) center no-repeat;
+    background-size: 100%;
+  }
+  
+  .main .list .item .item4 {
+    background: url(../images/home/提现资料@3x.png) center no-repeat;
+    background-size: 100%;
+  }
+  
+  .main .list .item .item5 {
+    background: url(../images/home/订单@3x.png) center no-repeat;
+    background-size: 100%;
+  }
+  
+  .main .list .item .item6 {
+    background: url(../images/home/明细@3x.png) center no-repeat;
+    background-size: 100%;
+  }
+  
+  .main .list .item .item7 {
+    background: url(../images/home/收益@3x.png) center no-repeat;
+    background-size: 100%;
+  }
+  
+  .main .list .item .item8 {
+    background: url(../images/home/支付密码@3x.png) center no-repeat;
+    background-size: 100%;
+  }
+  
+  .main .list .item .item9 {
+    background: url(../images/home/公告@3x.png) center no-repeat;
+    background-size: 100%;
+  }
+}

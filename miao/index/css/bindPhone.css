@@ -1,0 +1,102 @@
+.header {
+  width: 100%;
+  height: .6rem;
+  line-height: .6rem;
+  text-align: center;
+  font-size: .24rem;
+  background-color: #EEEEEE;
+}
+
+.header span {
+  color: #E7402E;
+}
+
+.bind-phone-warpper {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+}
+
+.bind-phone-warpper .inputphone {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 1rem;
+  border-radius: .14rem;
+  background-color: #EEEEEE;
+  margin: 1.2rem auto .8rem;
+  box-shadow: 0 3px 8px 1px #d6d5d5;
+}
+
+.inputphone .icon{
+  width: .9rem;
+  height: 1rem;
+  background: url('../images/bindPhone/手机验证@2x.png') center no-repeat;
+  background-size: 30%;
+}
+
+.inputphone .line,
+.code-warpper .line {
+  font-size: .4rem;
+  height: .4rem;
+  padding-right: .2rem;
+}
+
+.inputphone input,
+.code-warpper input {
+  background-color: #EEEEEE;
+}
+
+.inputCode {
+  display: flex;
+}
+
+.inputCode .code-warpper {
+  display: flex;
+  width: 70%;
+  align-items: center;
+  height: 1rem;
+  border-radius: .14rem;
+  background-color: #EEEEEE;
+  margin: 0 auto .8rem;
+  box-shadow: 0 3px 8px 1px #d6d5d5;
+}
+
+.inputCode .code-warpper .icon {
+  width: .9rem;
+  height: 1rem;
+  background: url('../images/bindPhone/手机验证@2x.png') center no-repeat;
+  background-size: 30%;
+}
+
+.inputCode .send-code {
+  width: 2.4rem;
+  height: 1rem;
+  border-radius: .14rem;
+  box-shadow: 0 3px 8px 1px #d6d5d5;
+  text-align: center;
+  line-height: 1rem;
+  margin-left: .4rem;
+  background: linear-gradient(to bottom, #EEEEEE , #CCCCCC);
+}
+
+.intoHome {
+  width: 100%;
+  height: .80rem;
+  background: linear-gradient(to bottom,#FFE6A9, #DFBA7E);
+  color: #333;
+  font-size: .32rem;
+  font-weight: bold;
+  border-radius: .4rem;
+  text-align: center;
+  line-height: .80rem;
+}
+
+@media (-webkit-min-device-pixel-ratio: 3),(min-device-pixel-ratio: 3) {
+  .inputphone .icon {
+    background: url('../images/bindPhone/手机验证@3x.png') center no-repeat;
+    background-size: 30%;
+  }
+}

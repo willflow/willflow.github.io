@@ -1,0 +1,66 @@
+.banner {
+  display: flex;
+  box-sizing: border-box;
+  padding: 0 .5rem;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 1.6rem;
+  border-radius: 0.14rem;
+  font-size: .32rem;
+  color: #DFBA7E;
+  margin: auto;
+  margin-bottom: .7rem;
+  background: url(../images/home/card-bg@2x.png) center no-repeat;
+  background-size: 100% 100%;
+}
+
+.banner div {
+  display: flex;
+  align-items: center;
+  font-size: .24rem;
+}
+
+.banner .refersh {
+  width: .24rem;
+  height: .24rem;
+  margin-right: .1rem;
+  background: url(../images/home/Shape1@2x.png) center no-repeat;
+  background-size: 100% 100%;
+}
+
+.count {
+  display: flex;
+  justify-content: space-between;
+  width: 6.96rem;
+  padding-bottom: .3rem;
+  margin: auto;
+  font-weight: bold;
+  font-size: .32rem;
+}
+
+.play-detail {
+  display: flex;
+  justify-content: space-between;
+  padding: .30rem .70rem;
+  font-size: .32rem;
+  color: #333333;
+  font-weight: 500;
+}
+
+.play-detail div {
+  position: relative;
+  top: .30rem;
+}
+
+.play-detail div p {
+  padding: .05rem 0;
+}
+
+.play-detail .status {
+  line-height: 1.36rem;
+}
+
+.border-bottom {
+  border: #333333;
+}

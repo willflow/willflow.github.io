@@ -1,0 +1,177 @@
+.auditing {
+  display: flex;
+  width: 94%;
+  margin: auto;
+  font-size: .32rem;
+  margin-bottom: .4rem;
+}
+
+.auditing div {
+  width: 50%;
+  height: .6rem;
+  border-radius: .14rem;
+  box-sizing: border-box;
+  background-color: #EEEEEE;
+  color: #999999;
+  text-align: center;
+  line-height: .6rem;
+  box-shadow: 0 3px 8px 1px #ebe9e9;
+}
+
+.auditing .audi-active {
+  color: #333333;
+  background: linear-gradient(to bottom,#FFE6A9, #DFBA7E);
+}
+
+.banner {
+  box-sizing: border-box;
+  width: 98%;
+  height: 1.38rem;
+  padding: 0 .4rem;
+  text-align: left;
+  line-height: 1.38rem;
+  margin: auto;
+  background: url(../images/home/card-bg@2x.png) center no-repeat;
+  background-size: 100% 100%;
+  color: #ffffff;
+  font-size: .32rem;
+}
+
+.player-info {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  width: 80%;
+  margin: .4rem auto;
+  justify-content: space-between;
+  height: 2.8rem;
+  box-shadow: 0 3px 8px 1px #a5a5a5;
+  border-radius: .14rem;
+  padding: 0 .4rem;
+  color: #333333;
+}
+
+.player-info .info {
+  display: flex;
+  flex-direction: column;
+  padding-left: .4rem;
+  margin-top: .3rem;
+}
+
+.player-info .info .name {
+  font-size: .32rem;
+}
+
+.player-info .info .player-head-img {
+  position: absolute;
+  width: .4rem;
+  height: .4rem;
+  border-radius: 50%;
+  top: .24rem;
+  left: .28rem;
+  background-color: #D8D8D8;
+}
+
+.player-info .info .player-img {
+  display: flex;
+}
+
+.player-info .info p {
+  margin-bottom: .2rem;
+}
+
+.player-info .info .player-img span{
+  width: 1rem;
+  height: 1rem;
+  border-radius: .06rem;
+  background-color: #D8D8D8;
+  margin-right: .2rem;
+}
+
+.player-info .apply {
+  display: flex;
+  flex-direction: column;
+  margin-top: .3rem;
+}
+
+.player-info .apply .argee {
+  margin-top: .2rem;
+}
+
+.player-info .apply button {
+  width: .96rem;
+  height: .4rem;
+  border-radius: .14rem;
+  box-shadow: 0 3px 8px 1px #ebe9e9;
+  background: linear-gradient(to bottom,#FFE6A9, #DFBA7E);
+  font-size: .24rem;
+  text-align: center;
+  line-height: .4rem;
+  margin-bottom: .1rem;
+}
+
+.player-info .apply .cancel {
+  background: linear-gradient(to bottom,#EEEEEE, #CCCCCC);
+}
+
+.untie-mask {
+  position: absolute;
+  z-index: 99;
+  top: 4.2rem;
+  left: 50%;
+  width: 6.96rem;
+  height: 3.12rem;
+  margin-left: -3.48rem;
+  border-radius: 0.14rem;
+  box-shadow: 0 3px 8px 1px #d6d5d5;
+}
+
+.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, .8);
+}
+
+.untie-mask .banner {
+  width: 100%;
+  height: 1rem;
+  text-align: center;
+  line-height: 1rem;
+  border-radius: 0.14rem;
+  font-size: .42rem;
+  color: #DFBA7E;
+  background: url(../images/home/card-bg@3x.png) no-repeat;
+  background-size: 100%;
+}
+
+.untie-mask .title {
+  font-size: .32rem;
+  text-align: center;
+  padding: .3rem 0 .4rem 0;
+}
+
+.untie-mask .btn-warpper {
+  display: flex;
+}
+
+.untie-mask .btn-warpper .cancel,
+.untie-mask .btn-warpper .enter {
+  width: 50%;
+  box-sizing: border-box;
+  height: 1rem;
+  line-height: 1rem;
+  text-align: center;
+  color: .32rem;
+  background-color: #fff;
+  border-radius: 0.14rem;
+  box-shadow: 0 3px 8px 1px #d6d5d5;
+}
+
+@media (max-width:320px) {
+  .player-info {
+    width: 96%;
+  }
+}
