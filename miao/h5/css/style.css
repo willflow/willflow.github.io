@@ -455,14 +455,32 @@ body {
   font-weight: bold;
 }
 
-@media (max-width:320px) {
+@media (max-width:414px) {
+  .invite-footer .left {
+    position: absolute;
+    width: 1.2rem;
+    height: 1.2rem;
+    top: -25%;
+    left: 3%;
+  }
+}
+
+@media (max-width:375px) {
   .live-invite {
     width: 5rem;
     height: 5.8rem;
   }
 
   .live-invite .invite-content div {
-    margin-bottom: .3rem;
+    margin-bottom: .2rem;
+  }
+
+}
+
+@media (max-width:320px) {
+  .live-invite {
+    width: 4.6rem;
+    height: 5.4rem;
   }
 
   .invite-footer .invite-footer-name {
