@@ -426,10 +426,10 @@ body {
 
 .invite-footer .left {
   position: absolute;
-  width: 20%;
-  top: -40%;
+  width: 1rem;
+  height: 1rem;
+  top: -25%;
   left: 3%;
-  padding-bottom: 15%;
   background-color: #ccc;
   border-radius: 50%;
   overflow: hidden;
@@ -463,13 +463,6 @@ body {
 
   .live-invite .invite-content div {
     margin-bottom: .3rem;
-  }
-
-  .invite-footer .left {
-    position: absolute;
-    width: 20%;
-    top: -30%;
-    left: 3%;
   }
 
   .invite-footer .invite-footer-name {
