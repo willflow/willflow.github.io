@@ -100,11 +100,10 @@ body {
 }
 
 .live-hot {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 2.3rem;
-  height: .45rem;
+  display: inline-block;
+  height: .5rem;
+  line-height: .5rem;
+  padding-right: .1rem;
   background-color: rgba(0,0,0,.24);
   border-radius: .66rem;
 }
@@ -178,7 +177,7 @@ body {
   border-radius: .66rem;
 }
 
-.live-footer .live-info .info-item .info-yellow {
+.info-item .info-yellow {
   position: relative;
   width: .2rem;
   color: #ffffff;
@@ -189,7 +188,7 @@ body {
   margin-right: .08rem;
 }
 
-.live-footer .live-info .info-item .info-blue {
+.info-item .info-blue {
   position: relative;
   width: .2rem;
   color: #ffffff;
@@ -200,7 +199,7 @@ body {
   margin-right: .08rem;
 }
 
-.live-footer .live-info .info-item .info-yellow::before {
+.info-item .info-yellow::before {
   position: absolute;
   bottom: -15%;
   left: -15%;
@@ -211,7 +210,7 @@ body {
   background-size: contain;
 }
 
-.live-footer .live-info .info-item .info-blue::before {
+.info-item .info-blue::before {
   position: absolute;
   bottom: -15%;
   left: -15%;
@@ -470,6 +469,89 @@ body {
   font-weight: bold;
 }
 
+/* 浏览器 */
+.top-browser {
+  position: absolute;
+  width: 100%;
+  height: 2.2rem;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background-color: rgba(0,0,0,.5);
+}
+
+.top-browser .banner {
+  display: flex;
+  width: 100%;
+  height: 2.2rem;
+  font-size: .38rem;
+  background: url("../images/img_guide@2x.png") center no-repeat;
+  background-size: 80%;
+}
+
+.top-browser .banner span {
+  position: relative;
+  left: 20%;
+  bottom: -50%;
+}
+
+/* 温馨提示 */
+.prompt-container {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-40%);
+  width: 6.4rem;
+  height: 7.4rem;
+  margin: 0 auto;
+  color: #666666;
+  font-size: .32rem;
+  background: url("../images/img_card_bg@2x.png") center no-repeat;
+  background-size: contain;
+}
+
+.prompt-container .img-prompt {
+  position: relative;
+  top: -.8rem;
+  width: 3rem;
+  height: 3.1rem;
+  margin: 0 auto;
+  background: url("../images/img_prompt@2x.png") center no-repeat;
+  background-size: contain;
+}
+
+.prompt-container .prompt-closse {
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  width: .6rem;
+  height: .6rem;
+  z-index: 100;
+  background: url("../images/ic_close_white@2x.png") center no-repeat;
+  background-size: contain;
+}
+
+.prompt-container .prompt-content {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.prompt-container .prompt-content p:nth-child(1) {
+  color: #333333;
+  font-size: .36rem;
+  text-align: center;
+  margin-bottom: .4rem;
+}
+
+.prompt-container .prompt-content p:nth-child(2) {
+  margin-bottom: .3rem;
+  line-height: .5rem;
+}
+
+.prompt-container .prompt-content p:nth-child(3) {
+  margin-bottom: .2rem;
+}
+
 @media (max-width:375px) {
   .live-invite {
     width: 5rem;
@@ -480,6 +562,12 @@ body {
     margin-bottom: .2rem;
   }
 
+  .prompt-container {
+    width: 5.4rem;
+    height: 6.4rem;
+    font-size: .24rem;
+  }
+
 }
 
 @media (max-width:320px) {
@@ -488,7 +576,74 @@ body {
     height: 5.4rem;
   }
 
+  .top-browser .banner span {
+    position: relative;
+    left: 20%;
+    bottom: -50%;
+    font-size: .34rem;
+  }
+
   .invite-footer .invite-footer-name {
     font-size: .28rem;
   }
+
+  .prompt-container {
+    width: 4.4rem;
+    height: 5.4rem;
+    font-size: .24rem;
+  }
+
+  .prompt-container .img-prompt {
+    top: -.5rem;
+    width: 2rem;
+    height: 2.1rem;
+  }
+}
+
+.live-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: hidden;
+  background: url("../images/mask@2x.png") center no-repeat;
+  background-size: cover;
+}
+
+.live-mask::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: inherit;
+  background-size: cover;
+  filter: blur(8px);
+}
+
+.live-mask .mask-content {
+  position: absolute;
+  width: 80%;
+  height: 1.2rem;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  transform: translate(-50%,-50%);
+  color: #ffffff;
+  font-size: .38rem;
+  z-index: 100;
+}
+
+.live-mask .mask-img {
+  position: absolute;
+  width: 1.7rem;
+  height: 1.7rem;
+  left: 50%;
+  top: 50%;
+  background: url("../images/ic_play@2x.png") center no-repeat;
+  background-size: contain;
+  transform: translate(-50%,-50%);
+  z-index: 100;
 }
