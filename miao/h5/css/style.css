@@ -411,8 +411,13 @@ body {
   font-size: .38rem;
   border-radius: 50%;
   margin: .2rem auto 0;
+  z-index: 99;
   box-shadow: 0 1px 3px #ccc;
   background-color: #FFEB62;
+}
+
+.invite-close a {
+  color: #fff;
 }
 
 .invite-footer {
