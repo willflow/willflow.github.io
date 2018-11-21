@@ -1,0 +1,57 @@
+.share-head {
+  display: block;
+  width: 90%;
+  height: 1.4rem;
+  margin: auto;
+  font-size: .32rem;
+  font-weight: bold;
+  color: #ffffff;
+  background: url("../images/img_button_bg@2x.png") center no-repeat;
+  background-size: contain;
+}
+
+.share-content {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.share-content .content-item {
+  position: relative;
+  box-sizing: border-box;
+  width: 48%;
+  padding-bottom: 48%;
+  margin: 1%;
+}
+
+.share-content .content-item img {
+  position: absolute;
+  width: 100%;
+  border-radius: .14rem;
+}
+
+.share-content .content-item .content {
+  position: absolute;
+  width: 90%;
+  height: .9rem;
+  left: 50%;
+  bottom: 0;
+  color: #ffffff;
+  transform: translate(-50%,0);
+}
+
+.content-item .content .name {
+  font-size: .32rem;
+}
+
+.content-item .content .grade {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.share-footer {
+  font-size: .32rem;
+  margin-top: .8rem;
+  text-align: center;
+}

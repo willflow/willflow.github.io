@@ -1,0 +1,152 @@
+html,body {
+  height: 100%;
+}
+
+body {
+  background: url("../images/mask@2x.png") center no-repeat;
+  background-size: cover;
+}
+
+.login-mask {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #201F25;
+  opacity: .4;
+}
+
+.login-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 99;
+}
+
+.login-icon {
+  width: 5.08rem;
+  height: 6.72rem;
+  margin: 0 auto;
+  background: url("../images/login_logo@2x.png") center no-repeat;
+  background-size: 50% 50%;
+}
+
+.login-weixin-btn {
+  position: relative;
+  display: block;
+  width: 70%;
+  height: .86rem;
+  line-height: .86rem;
+  border-radius: .86rem;
+  margin: auto;
+  color: #ffffff;
+  font-size: .32rem;
+  font-weight: bold;
+  background-color: #3CCF61;
+  opacity: .9;
+}
+
+.login-weixin-btn::before {
+  position: absolute;
+  left: 8%;
+  top: 50%;
+  transform: translate(-8%,-50%);
+  display: inline-block;
+  content: "";
+  width: .48rem;
+  height: .48rem;
+  background: url("../images/login_wechat@2x.png") center no-repeat;
+  background-size: cover;
+}
+
+.login-line {
+  width: 80%;
+  margin: .6rem auto;
+  font-size: .32rem;
+  text-align: center;
+  line-height: .32rem;
+  color: #ffffff;
+  opacity: .5;
+  background: url("../images/login_line@2x.png") center no-repeat;
+  background-size: contain;
+}
+
+.login-list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  margin-bottom: .9rem;
+}
+
+.login-list .item1 {
+  background: url("../images/login_phone@2x.png") center no-repeat;
+}
+.login-list .item2 {
+  background: url("../images/login_qq@2x.png") center no-repeat;
+}
+.login-list .item3 {
+  background: url("../images/login_tourists@2x.png") center no-repeat;
+}
+
+.login-list .item1,
+.login-list .item2,
+.login-list .item3 {
+  width: 1rem;
+  height: 1rem;
+  background-size: contain;
+}
+
+.login-footer {
+  text-align: center;
+  color: #ffffff;
+}
+
+.login-footer span {
+  opacity: .5;
+}
+
+@media (-webkit-min-device-pixel-ratio: 3),(min-device-pixel-ratio: 3) {
+  body {
+    background: url("../images/mask@3x.png") center no-repeat;
+    background-size: cover;
+  }
+
+  .login-icon {
+    background: url("../images/login_logo@3x.png") center no-repeat;
+    background-size: 50% 50%;
+  }
+}
+
+@media (max-width:414px) {
+  .login-icon {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width:375px) {
+  .login-icon {
+    margin-bottom: .8rem;
+  }
+}
+
+@media (max-width:320px) {
+  .login-icon {
+    background-size: 25% 25%;
+    margin-bottom: .2rem;
+  }
+
+  .login-list {
+    margin-bottom: .5rem;
+  }
+}
+
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+  .login-icon {
+    margin-bottom: 2rem;
+  }
+}
