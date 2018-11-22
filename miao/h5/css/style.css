@@ -613,6 +613,10 @@ body {
     font-size: .28rem;
   }
 
+  .invite-btn {
+    font-size: .24rem;
+  } 
+
   .prompt-container {
     width: 4.4rem;
     height: 5.4rem;
@@ -624,6 +628,11 @@ body {
     width: 2rem;
     height: 2.1rem;
   }
+
+  .invite-footer .invite-footer-btn {
+    font-size: .24rem;
+  }
+
 }
 
 .live-mask {
