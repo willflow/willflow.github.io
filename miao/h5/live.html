@@ -55,7 +55,7 @@
         <button class="invite-btn el"><a href="https://willflow.github.io/miao/h5/live-login.html">登录后领取奖励</a></button>
       </div>
       <div class="line">
-        <button class="invite-close el"><a href="https://willflow.github.io/miao/h5/live-end.html">X</a></button>
+        <button class="invite-close el"><a href="#">X</a></button>
       </div>
     </div>
     <div class="live-footer">
@@ -77,10 +77,12 @@
           <input type="text" placeholder="和主播说点什么吧">
         </div>
         <button class="gift"></button>
-        <button class="lianmai">
-          <span></span>
-          邀请连麦
-        </button>
+        <a href="https://willflow.github.io/miao/h5/live-share.html">
+            <button class="lianmai">
+                <span></span>
+                邀请连麦
+              </button>
+        </a>
       </div>
     </div>
   </div>
@@ -89,11 +91,9 @@
     var extract = document.getElementsByClassName("live-extract")[0]
     var mask = document.getElementsByClassName("live-invite-mask2")[0]
     var invite = document.getElementsByClassName("live-invite")[0]
-    extract.addEventListener("click", function () {
-      extract.style.display = "none"
-      mask.className = "live-invite-mask2"
-      mask.style.opacity = 1
-      var functionBasedDuration = anime({
+    var close = document.getElementsByClassName("invite-close")[0]
+
+    var functionBasedDuration = anime({
         targets: '#functionBasedDuration .el',
         translateX: 65,
         direction: 'alternate',
@@ -102,6 +102,15 @@
           return 1000 + (i * 1000);
         }
       });
+
+    extract.addEventListener("click", function () {
+      extract.style.display = "none"
+      mask.className = "live-invite-mask2"
+    })
+
+    close.addEventListener("click", function () {
+      extract.style.display = ""
+      mask.className = "live-invite-mask2 live-invite-mask-hide"
     })
   </script>
 </body>
