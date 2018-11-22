@@ -8,6 +8,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="anime.min.js"></script>
 </head>
 
 <body>
@@ -30,7 +31,7 @@
         </div>
       </div>
       <div class="live-hot">
-          <div class="info-item"><span class="info-blue">161</span><span class="live-hot-color">魅力：</span>223456 ></div>
+        <div class="info-item"><span class="info-blue">161</span><span class="live-hot-color">魅力：</span>223456 ></div>
       </div>
       <div class="live-extract">
         <div class="live-extract-content">
@@ -39,17 +40,35 @@
         </div>
       </div>
     </div>
+    <div id="functionBasedDuration" class="live-invite-mask2 live-invite-mask-hide">
+      <div class="line">
+        <div class="live-invite el">
+          <div class="invite-content">
+            <div class="">您接受了蓝鸟的邀请</div>
+            <div>—— 可得奖励 ——</div>
+            <div class="money"><span>￥</span>1.7</div>
+            <div>满30元可以提现</div>
+          </div>
+        </div>
+      </div>
+      <div class="line">
+        <button class="invite-btn el"><a href="https://willflow.github.io/miao/h5/live-login.html">登录后领取奖励</a></button>
+      </div>
+      <div class="line">
+        <button class="invite-close el"><a href="https://willflow.github.io/miao/h5/live-end.html">X</a></button>
+      </div>
+    </div>
     <div class="live-footer">
       <div class="live-public">平台将严厉打击任何违法行为，违者将永久禁播!</div>
       <div class="live-info">
         <div class="info-wrapper">
-            <div class="info-item"><span class="info-yellow">161</span>热火来了</div>
+          <div class="info-item"><span class="info-yellow">161</span>热火来了</div>
         </div>
         <div class="info-wrapper">
-            <div class="info-item"><span class="info-blue">161</span><span>热火：</span><span class="red">[悄]</span>欢迎你</div>
+          <div class="info-item"><span class="info-blue">161</span><span>热火：</span><span class="red">[悄]</span>欢迎你</div>
         </div>
         <div class="info-wrapper">
-            <div class="info-item"><span class="yellow-img"></span><span class="info-yellow">161</span><span>热火：</span>你好!</div>
+          <div class="info-item"><span class="yellow-img"></span><span class="info-yellow">161</span><span>热火：</span>你好!</div>
         </div>
       </div>
       <div class="live-chat">
@@ -65,6 +84,26 @@
       </div>
     </div>
   </div>
+
+  <script>
+    var extract = document.getElementsByClassName("live-extract")[0]
+    var mask = document.getElementsByClassName("live-invite-mask2")[0]
+    var invite = document.getElementsByClassName("live-invite")[0]
+    extract.addEventListener("click", function () {
+      extract.style.display = "none"
+      mask.className = "live-invite-mask2"
+      mask.style.opacity = 1
+      var functionBasedDuration = anime({
+        targets: '#functionBasedDuration .el',
+        translateX: 65,
+        direction: 'alternate',
+        loop: true,
+        duration: function (el, i, l) {
+          return 1000 + (i * 1000);
+        }
+      });
+    })
+  </script>
 </body>
 
 </html>

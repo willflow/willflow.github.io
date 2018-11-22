@@ -119,6 +119,7 @@ body {
   width: 2.44rem;
   height: 2.92rem;
   color: #ffffff;
+  transition: all .5s linear;
   background: url("../images/img_extract@2x.png") center no-repeat;
   background-size: contain;
 }
@@ -337,6 +338,28 @@ body {
 }
 
 /* 邀请函 */
+.live-invite-mask {
+  position: absolute;
+  transform: translate(-50%,-50%);
+  top: 50%;
+  left: 50%;
+  z-index: 102;
+  transition: all .5s linear;
+}
+
+.live-invite-mask2 {
+  position: absolute;
+  transform: translate(0,-50%);
+  top: 50%;
+  left: 0;
+  z-index: 102;
+  transition: all .5s linear;
+}
+
+.live-invite-mask-hide {
+  display: none;
+}
+
 .live-invite {
   width: 6rem;
   height: 6.8rem;
@@ -350,7 +373,7 @@ body {
   flex-direction: column;
   width: 100%;
   margin: auto;
-  margin-top: 1rem;
+  padding-top: 1rem;
   text-align: center;
   color: #333333;
 }
