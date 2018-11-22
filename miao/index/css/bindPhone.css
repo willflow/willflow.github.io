@@ -11,92 +11,133 @@
   color: #E7402E;
 }
 
-.bind-phone-warpper {
+.inputphone {
   display: flex;
-  flex-direction: column;
-  width: 80%;
-  margin: auto;
-}
-
-.bind-phone-warpper .inputphone {
-  display: flex;
-  justify-content: flex-start;
   align-items: center;
-  width: 100%;
+  width: 80%;
   height: 1rem;
   border-radius: .14rem;
+  margin: 1.2rem auto 0;
   background-color: #EEEEEE;
-  margin: 1.2rem auto .8rem;
   box-shadow: 0 3px 8px 1px #d6d5d5;
 }
 
-.inputphone .icon{
+.inputcode {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 1rem;
+  margin: .8rem auto .8rem;
+}
+
+.inputcode .code-wrapper {
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  width: 3.6rem;
+  border-radius: .14rem;
+  background-color: #EEEEEE;
+  box-shadow: 0 3px 8px 1px #d6d5d5;
+}
+
+.inputcode .code-wrapper input {
+  width: 50%;
+}
+
+.inputcode .icon,
+.inputphone .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: .9rem;
   height: 1rem;
-  background: url('../images/bindPhone/手机验证@2x.png') center no-repeat;
-  background-size: 30%;
+}
+
+.inputcode .icon span,
+.inputphone .icon span {
+  display: inline-block;
+  width: .24rem;
+  height: .32rem;
+  background: url('../images/home/手机验证@2x.png') center no-repeat;
+  background-size: cover;
+}
+
+.inputphone .icon span {
+  background: url('../images/home/复制链接@2x.png') center no-repeat;
+  background-size: cover;
 }
 
 .inputphone .line,
-.code-warpper .line {
+.inputcode .line {
   font-size: .4rem;
   height: .4rem;
   padding-right: .2rem;
 }
 
 .inputphone input,
-.code-warpper input {
+.inputcode input {
+  font-size: .28rem;
+  color: #999999;
   background-color: #EEEEEE;
 }
 
-.inputCode {
-  display: flex;
-}
-
-.inputCode .code-warpper {
-  display: flex;
-  width: 70%;
-  align-items: center;
+.send-code {
+  width: 35%;
   height: 1rem;
   border-radius: .14rem;
-  background-color: #EEEEEE;
-  margin: 0 auto .8rem;
-  box-shadow: 0 3px 8px 1px #d6d5d5;
-}
-
-.inputCode .code-warpper .icon {
-  width: .9rem;
-  height: 1rem;
-  background: url('../images/bindPhone/手机验证@2x.png') center no-repeat;
-  background-size: 30%;
-}
-
-.inputCode .send-code {
-  width: 2.4rem;
-  height: 1rem;
-  border-radius: .14rem;
-  box-shadow: 0 3px 8px 1px #d6d5d5;
   text-align: center;
   line-height: 1rem;
-  margin-left: .4rem;
+  font-size: .32rem;
+  box-shadow: 0 3px 8px 1px #d6d5d5;
   background: linear-gradient(to bottom, #EEEEEE , #CCCCCC);
 }
 
 .intoHome {
-  width: 100%;
+  width: 80%;
   height: .80rem;
-  background: linear-gradient(to bottom,#FFE6A9, #DFBA7E);
-  color: #333;
+  margin: auto;
+  margin-top: .8rem;
+  text-align: center;
+  line-height: .80rem;
+  letter-spacing: 2px;
   font-size: .32rem;
   font-weight: bold;
   border-radius: .4rem;
+  color: #333;
+  background: linear-gradient(to bottom,#FFE6A9, #DFBA7E);
+}
+
+.bind-notice {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 6rem;
+  height: 2.2rem;
+  transform: translate(-50%,-50%);
+  border-radius: .14rem;
   text-align: center;
-  line-height: .80rem;
+  line-height: 2.2rem;
+  background-color: #ecebeb;
+  box-shadow: 0 3px 8px 1px #d6d5d5;
 }
 
 @media (-webkit-min-device-pixel-ratio: 3),(min-device-pixel-ratio: 3) {
-  .inputphone .icon {
-    background: url('../images/bindPhone/手机验证@3x.png') center no-repeat;
-    background-size: 30%;
+  .inputcode .icon span {
+    background: url('../images/home/手机验证@3x.png') center no-repeat;
+    background-size: cover;
+  }
+
+  .inputphone .icon span {
+    background: url('../images/home/复制链接@3x.png') center no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (max-width:320px) {
+  .send-code {
+    width: 25%;
+    font-size: .24rem;
   }
 }

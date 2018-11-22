@@ -1,3 +1,15 @@
+body,html {
+  height: 100%;
+}
+
+.family-apply-header {
+  height: .6rem;
+  line-height: .6rem;
+  font-size: .24rem;
+  text-align: center;
+  background-color: #EEEEEE;
+}
+
 .auditing {
   display: flex;
   width: 94%;
@@ -25,11 +37,11 @@
 
 .banner {
   box-sizing: border-box;
-  width: 98%;
-  height: 1.38rem;
+  width: 94%;
+  height: 1rem;
   padding: 0 .4rem;
   text-align: left;
-  line-height: 1.38rem;
+  line-height: 1rem;
   margin: auto;
   background: url(../images/home/card-bg@2x.png) center no-repeat;
   background-size: 100% 100%;
@@ -76,6 +88,22 @@
   display: flex;
 }
 
+.player-info .info .girl-img,
+.player-info .info .boy-img {
+  display: inline-block;
+  width: .32rem;
+  height: .32rem;
+  vertical-align: top;
+  margin-left: .14rem;
+  background: url("../images/home/性别女@2x.png") center no-repeat;
+  background-size: cover;
+}
+
+.player-info .info .boy-img {
+  background: url("../images/home/性别男@2x.png") center no-repeat;
+  background-size: cover;
+}
+
 .player-info .info p {
   margin-bottom: .2rem;
 }
@@ -94,10 +122,6 @@
   margin-top: .3rem;
 }
 
-.player-info .apply .argee {
-  margin-top: .2rem;
-}
-
 .player-info .apply button {
   width: .96rem;
   height: .4rem;
@@ -108,6 +132,12 @@
   text-align: center;
   line-height: .4rem;
   margin-bottom: .1rem;
+}
+
+.player-info .apply .argee {
+  background: #ffffff;
+  box-shadow: none;
+  border-radius: 0;
 }
 
 .player-info .apply .cancel {
@@ -128,6 +158,7 @@
 
 .mask {
   position: absolute;
+  display: none;
   top: 0;
   left: 0;
   bottom: 0;
@@ -143,7 +174,7 @@
   border-radius: 0.14rem;
   font-size: .42rem;
   color: #DFBA7E;
-  background: url(../images/home/card-bg@3x.png) no-repeat;
+  background: url(../images/home/card-bg@2x.png) no-repeat;
   background-size: 100%;
 }
 
@@ -168,6 +199,35 @@
   background-color: #fff;
   border-radius: 0.14rem;
   box-shadow: 0 3px 8px 1px #d6d5d5;
+}
+
+.image-blow-up {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 100%;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: #000000;
+}
+
+.image-blowup-hide {
+  display: none;
+}
+
+.image-blow-up .image-content {
+  width: 100%;
+  height: 50%;
+  background-color: #fff;
+}
+
+.image-blow-up .image-content img {
+  width: 100%;
+  height: 100%;
 }
 
 @media (max-width:320px) {

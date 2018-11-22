@@ -1,5 +1,5 @@
 .image {
-  width: 90%;
+  width: 100%;
   margin: auto;
   height: 3.2rem;
   background-color: #D8D8D8;
@@ -17,7 +17,8 @@
 
 .family-name {
   display: flex;
-  width: 90%;
+  align-items: center;
+  width: 100%;
   margin: auto;
   margin-bottom: .6rem;
 }
@@ -26,14 +27,16 @@
   max-width: 2.56rem;
 }
 
-.family-name .title {
+.family-name .title,
+.family-notice .title {
+  margin-right: .2rem;
   font-weight: bold;
-  padding-right: 1.2rem;
 }
 
 .family-name .btn {
   position: absolute;
   right: 0;
+  bottom: 0;
   height: .40rem;
   font-size: .24rem;
   color: #333;
@@ -44,43 +47,85 @@
   background: linear-gradient(to bottom,#FFE6A9, #DFBA7E);
 }
 
+.family-name input {
+  flex:1;
+  box-sizing: border-box;
+  padding-left: .2rem;
+  border-radius: .14rem;
+  overflow: scroll;
+  border:1px solid rgb(34, 33, 33);
+  box-shadow: 0 3px 8px 1px #8a8989;
+}
+
+.family-notice {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  margin-bottom: .6rem;
+}
+
+.family-notice textarea {
+  position: relative;
+  top: -.3rem;
+  flex: 1;
+  box-sizing: border-box;
+  padding: .2rem;
+  border-radius: .14rem;
+  border:1px solid rgb(34, 33, 33);
+  overflow: scroll;
+  box-shadow: 0 3px 8px 1px #8a8989;
+}
+
 .relative {
   position: relative;
+}
+
+.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, .6);
+}
+
+.all-hide {
+  display: none;
 }
 
 .invite-mask {
   /* display: none; */
   position: absolute;
-  top: 5.12rem;
+  z-index: 99;
+  top: 40%;
   left: 50%;
-  width: 6.96rem;
+  width: 90%;
   height: 3.12rem;
-  margin-left: -3.48rem;
-  margin-top: -1.56rem;
+  transform: translate(-50%, -40%);
   background-color: #fff;
   border-radius: 0.14rem;
   box-shadow: 0 3px 8px 1px #757575;
 }
 
 .invite-mask .banner {
+  width: 100%;
   height: 1rem;
   font-size: .42rem;
   line-height: 1rem;
   text-align: center;
   border-radius: 0.14rem;
   color:  #DFBA7E;
-  background-clip: padding-box;
   margin-bottom: .4rem;
   box-shadow: 0 3px 8px 1px #757575;
-  background: linear-gradient(to right,#333, #555);
+  background: url("../images/home/card-bg@2x.png") no-repeat;
+  background-size: 100% 100%;
 }
 
 .invite-mask .banner span {
-  display: inline-block;
-  width: 100%;
-  height: 1.4rem;
-  background: url(../images/home/card-bg@3x.png) no-repeat;
-  background-size: 100%;
+  font-family: Impact;
+  background-image: linear-gradient(to bottom,#FFE6A9, #DFBA7E);
+  -webkit-background-clip:text; 
+  -webkit-text-fill-color:transparent;
 }
 
 .invite-mask .content {

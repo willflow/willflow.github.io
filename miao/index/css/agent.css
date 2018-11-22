@@ -1,0 +1,269 @@
+.agent-title {
+  width: 100%;
+  height: .6rem;
+  font-size: .24rem;
+  line-height: .6rem;
+  text-align: center;
+  background-color: #EEEEEE;
+}
+
+.agent-title .green {
+  color: #47AD69;
+}
+
+.agent-title .red {
+  color: #E7402E;
+}
+
+.agent-banner {
+  display: flex;
+  box-sizing: border-box;
+  padding: 0 .5rem;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 1rem;
+  border-radius: 0.14rem;
+  font-size: .32rem;
+  color: #DFBA7E;
+  margin: auto;
+  margin-top: .4rem;
+  margin-bottom: .8rem;
+  background: url(../images/home/card-bg@2x.png) center no-repeat;
+  background-size: 100% 100%;
+}
+
+.agent-banner .btn {
+  padding: .1rem .4rem;
+  border-radius: .66rem;
+  font-size: .32rem;
+  background: linear-gradient(to bottom,#FFE6A9, #DFBA7E);
+}
+
+.main .list .item .item1 {
+  background: url(../images/agent/代客充值@2x.png) center no-repeat;
+  background-size: 100%;
+}
+
+.main .list .item .item2 {
+  background: url(../images/agent/靓号@2x.png) center no-repeat;
+  background-size: 100%;
+}
+
+.main .list .item .item3 {
+  background: url(../images/agent/借款@2x.png) center no-repeat;
+  background-size: 100%;
+}
+
+.main .list .item .item4 {
+  background: url(../images/agent/提现资料@2x.png) center no-repeat;
+  background-size: 100%;
+}
+
+.main .list .item .item5 {
+  background: url(../images/agent/订单@2x.png) center no-repeat;
+  background-size: 100%;
+}
+
+.main .list .item .item6 {
+  background: url(../images/agent/明细@2x.png) center no-repeat;
+  background-size: 100%;
+}
+
+.main .list .item .item7 {
+  background: url(../images/agent/收益@2x.png) center no-repeat;
+  background-size: 100%;
+}
+
+.main .list .item .item8 {
+  background: url(../images/home/支付密码@2x.png) center no-repeat;
+  background-size: 100%;
+}
+
+.main .list .item .item9 {
+  background: url(../images/home/公告@2x.png) center no-repeat;
+  background-size: 100%;
+}
+
+.account {
+  position: relative;
+  display: flex;
+  border-radius: 0.14rem;
+  box-shadow: 0 3px 8px 1px #d6d5d5;
+  align-items: center;
+  width: 90%;
+  height: 1rem;
+  margin: 0 auto .4rem;
+  background-color: #EEEEEE;
+}
+
+html .account:first-child {
+  margin-top: .4rem;
+}
+
+.changeinfo-btn {
+  margin-top: 1rem;
+}
+
+.account p {
+  width: 2.8rem;
+  box-sizing: border-box;
+  font-size: .32rem;
+  font-weight: bold;
+  line-height: 1rem;
+  padding: 0 .5rem;
+}
+
+.account-code {
+  display: flex;
+  box-sizing: border-box;
+  border-radius: 0.14rem;
+  box-shadow: 0 3px 8px 1px #d6d5d5;
+  background-color: #EEEEEE;
+  width: 4.6rem;
+  height: 1rem;
+  margin-bottom: .4rem;
+  margin-right: .2rem;
+}
+
+.account .account-posi {
+  position: absolute;
+  right: .4rem;
+  font-size: .32rem;
+  font-weight: bold;
+}
+
+.account-code p {
+  width: .96rem;
+  font-size: .32rem;
+  font-weight: bold;
+  line-height: 1rem;
+  padding:0 .8rem 0 .5rem;
+}
+
+.account input,
+.account-code input {
+  background-color: #EEEEEE;
+}
+
+.account-code .inputCode {
+  width: 1.8rem
+}
+
+.infoBtn {
+  width: 70%;
+  margin: auto;
+  height: .8rem;
+  margin-top: .8rem;
+  font-weight: bold;
+}
+
+.infoBtn .btn {
+  width: 100%;
+  height: .8rem;
+  text-align: center;
+  line-height: .8rem;
+  border-radius: .66rem;
+  background: linear-gradient(to bottom,#FFE6A9, #DFBA7E);
+}
+
+.banner {
+  background: url(../images/home/card-bg@2x.png) no-repeat;
+  background-size: 100%;
+  margin-bottom: 0;
+  font-weight: 450;
+}
+
+.untie-mask .content {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+  background-color: #fff;
+}
+
+.untie-mask .content .item {
+  display: flex;
+  padding: .2rem 0;
+  font-size: .32rem;
+  align-items: center;
+}
+
+.untie-mask .content .item span:nth-child(1){
+  font-weight: bold;
+  margin-right: 10%;
+}
+
+.mask {
+  display: none;
+}
+
+.recruit-info .title {
+  margin-top: .5rem;
+  margin-bottom: .6rem;
+}
+.recruit-info .info {
+  margin-bottom: .6rem;
+}
+
+@media (max-width:320px) {
+
+  .account p {
+    width: 2.8rem;
+    box-sizing: border-box;
+    font-size: .24rem;
+  }
+
+}
+
+@media (-webkit-min-device-pixel-ratio: 3),(min-device-pixel-ratio: 3) {
+  .header .home-img {
+    background-image: url('../images/home/Shape@3x.png');
+  }
+  
+  .main .list .item .item1 {
+    background: url(../images/agent/代客充值@2x.png) center no-repeat;
+    background-size: 100%;
+  }
+  
+  .main .list .item .item2 {
+    background: url(../images/agent/靓号@2x.png) center no-repeat;
+    background-size: 100%;
+  }
+  
+  .main .list .item .item3 {
+    background: url(../images/agent/借款@2x.png) center no-repeat;
+    background-size: 100%;
+  }
+  
+  .main .list .item .item4 {
+    background: url(../images/agent/提现资料@2x.png) center no-repeat;
+    background-size: 100%;
+  }
+  
+  .main .list .item .item5 {
+    background: url(../images/agent/订单@2x.png) center no-repeat;
+    background-size: 100%;
+  }
+  
+  .main .list .item .item6 {
+    background: url(../images/agent/明细@2x.png) center no-repeat;
+    background-size: 100%;
+  }
+  
+  .main .list .item .item7 {
+    background: url(../images/agent/收益@2x.png) center no-repeat;
+    background-size: 100%;
+  }
+  
+  .main .list .item .item8 {
+    background: url(../images/home/支付密码@2x.png) center no-repeat;
+    background-size: 100%;
+  }
+  
+  .main .list .item .item9 {
+    background: url(../images/home/公告@2x.png) center no-repeat;
+    background-size: 100%;
+  }
+
+}

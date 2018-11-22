@@ -1,7 +1,9 @@
 .account {
+  position: relative;
   display: flex;
   border-radius: 0.14rem;
   box-shadow: 0 3px 8px 1px #d6d5d5;
+  align-items: center;
   width: 100%;
   height: 1rem;
   margin-bottom: .4rem;
@@ -15,7 +17,7 @@
   font-size: .32rem;
   font-weight: bold;
   line-height: 1rem;
-  padding: 0 .5rem;
+  padding: 0 .35rem;
 }
 
 .bindPhone {
@@ -33,6 +35,7 @@
 
 .code {
   display: flex;
+  justify-content: space-between;
   width: 100%;
 }
 
@@ -46,6 +49,13 @@
   height: 1rem;
   margin-bottom: .4rem;
   margin-right: .2rem;
+}
+
+.account .account-posi {
+  position: absolute;
+  right: .4rem;
+  font-size: .32rem;
+  font-weight: bold;
 }
 
 .account-code p {
@@ -77,6 +87,11 @@
   background: #EEEEEE;
 }
 
+.code .send {
+  color: #999999;
+  background: #EEEEEE;
+}
+
 .infoBtn {
   width: 90%;
   margin: auto;
@@ -93,6 +108,7 @@
   width: 5rem;
   margin: auto;
   margin-top: .4rem;
+  text-align: center;
 }
 
 .notice p {
@@ -100,4 +116,11 @@
   color: #333333;
   letter-spacing: 1px;
   font-weight: bold;
+}
+
+.warn {
+  width: 90%;
+  margin: auto;
+  font-size: .28rem;
+  text-align: center;
 }

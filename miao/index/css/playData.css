@@ -22,7 +22,9 @@
 .play-number {
   display: flex;
   justify-content: space-between;
+  width: 80%;
   padding: .40rem 0;
+  margin: auto;
   font-size: .32rem;
   color: #333333;
   font-weight: 550;

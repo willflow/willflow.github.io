@@ -3,7 +3,8 @@
   width: 100%;
   height: 2.56rem;
   border-radius: .14rem;
-  background: linear-gradient(to right, #333333 , #555555);
+  background: url("../images/home/bg-card-black@2x.png") no-repeat;
+  background-size: 100% 100%;
   box-shadow: 0px 3px 8px #757575;
 }
 
@@ -39,6 +40,9 @@
 .sell-count .number {
   font-size: .72rem;
   font-family: Impact;
+  background-image: linear-gradient(to bottom,#FFE6A9, #DFBA7E);
+  -webkit-background-clip:text; 
+  -webkit-text-fill-color:transparent;
 }
 
 .sell-count .rank-up {
@@ -86,6 +90,7 @@
 
 .main .list {
   display: flex;
+  margin: auto;
   flex-wrap: wrap;
 }
 
@@ -107,6 +112,163 @@
   padding-top: .1rem;
   font-size: .32rem;
   font-weight: 550;
+}
+
+.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, .6);
+}
+
+.invite-mask {
+  /* display: none; */
+  position: absolute;
+  z-index: 99;
+  top: 40%;
+  left: 50%;
+  width: 90%;
+  height: 3.12rem;
+  transform: translate(-50%, -40%);
+  /* background-color: #fff;
+  border-radius: 0.14rem;
+  box-shadow: 0 3px 8px 1px #757575; */
+}
+
+.invite-mask .banner {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  height: 1rem;
+  font-size: .42rem;
+  line-height: 1rem;
+  text-align: center;
+  border-radius: 0.14rem;
+  color:  #DFBA7E;
+  box-shadow: 0 3px 8px 1px #757575;
+  background: url("../images/home/card-bg@2x.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+.invite-mask .banner span {
+  font-family: Impact;
+  background-image: linear-gradient(to bottom,#FFE6A9, #DFBA7E);
+  -webkit-background-clip:text; 
+  -webkit-text-fill-color:transparent;
+}
+
+.invite-mask .content {
+  position: relative;
+  box-sizing: border-box;
+  padding: .2rem;
+  padding-top: .5rem;
+  text-align:  center;
+  font-size: .24rem;
+  margin-top: -.2rem;
+  background-color: #fff;
+  border-radius: 0.14rem;
+  box-shadow: 0 3px 8px 1px #757575;
+  overflow: scroll;
+}
+
+.invite-mask .content p {
+  margin-bottom: .3rem;
+}
+
+.invite-mask .content .know {
+  width: 3.48rem;
+  height: .44rem;
+  line-height: .44rem;
+  text-align: center;
+  font-size: .24rem;
+  border-radius: 0.14rem;
+  box-shadow: 0 3px 8px 1px #adadad;
+  background: linear-gradient(to bottom, #EEEEEE , #CCCCCC);
+}
+
+.explain-mask-hide {
+  display: none;
+}
+
+.mask-notice {
+  position: absolute;
+  display: flex;
+  width: 90%;
+  top: 20%;
+  left: 50%;
+  z-index: 99;
+  transform: translate(-50%, -20%);
+  flex-direction: column;
+}
+
+.mask-notice .close-wrapper {
+  display: flex;
+  width: 100%;
+  height: .48rem;
+  margin-bottom: .4rem;
+  justify-content: flex-end;
+}
+
+.mask-notice .close-wrapper .close {
+  display: flex;
+  width: .48rem;
+  height: .48rem;
+  background: url("../images/PhoneHome/关闭@2x.png") center no-repeat;
+  background-size: contain;
+}
+
+.mask-notice .banner {
+  position: relative;
+  z-index: 99;
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 1rem;
+  padding: 0 .6rem;
+  color: #DFBA7E;
+  background: url("../images/home/card-bg@2x.png") center no-repeat;
+  background-size: cover;
+  border-radius: .14rem;
+  margin-bottom: .02rem;
+}
+
+.mask-notice .banner p {
+  font-size: .32rem;
+  font-weight: bold;
+}
+
+.mask-notice .banner .open {
+  width: .40rem;
+  height: .40rem;
+  background: url("../images/PhoneHome/Shape@2x.png") center no-repeat;
+  background-size: contain;
+}
+
+.mask-notice .content {
+  margin: auto;
+  margin-top: -.24rem;
+  border-radius: .14rem;
+  padding: .4rem;
+  background-color: #ffffff;
+  box-shadow: 0 3px 8px 1px #cccccc;
+}
+
+.mask-notice .hide {
+  display: none;
+}
+
+.mask-notice .banner .down {
+  background: url("../images/PhoneHome/Shape1@2x.png") center no-repeat;
+  background-size: contain;
+}
+
+.mask-notice .banner .right {
+  background: url("../images/PhoneHome/Shape2@2x.png") center no-repeat;
+  background-size: contain;
 }
 
 .main .list .item .item1 {

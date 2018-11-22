@@ -53,54 +53,56 @@
 }
 
 .count {
-  width: 6.96rem;
-  padding-bottom: .4rem;
+  width: 90%;
   margin: auto;
+  margin-bottom: .4rem;
   font-weight: bold;
   font-size: .32rem;
 }
 
 .play-detail {
+  height: 1.6rem;
+}
+
+.play-detail .detail {
   display: flex;
-  width: 100%;
-  box-sizing: border-box;
-  justify-content: space-between;
-  padding: .40rem .70rem;
+  width: 90%;
+  margin: auto;
+  height: 1.6rem;
   font-size: .32rem;
-  color: #333333;
-  font-weight: 500;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.play-detail div {
-  position: relative;
-  top: .40rem;
+.play-detail .detail .title {
+  margin-bottom: .2rem;
 }
 
-.play-detail div p {
-  padding: .05rem 0;
-}
-
-.play-detail .status {
-  line-height: 1.36rem;
+.play-detail .detail .gray {
+  color: #999999;
 }
 
 .border-bottom {
+  width: 100%;
   border: #333333;
 }
 
 .new {
-  position: absolute;
-  width: 8.28rem;
-  bottom: 0;
+  width: 100%;
   text-align: center;
   font-size: .24rem;
 }
 
 .new p {
-  width: 8.28rem;
   height: .6rem;
   background-color: #EEEEEE;
   line-height: .6rem;
+}
+
+@media (max-width:375px) {
+  .start-time .searchId {
+    width: 22%;
+  }
 }
 
 @media (max-width:320px) {

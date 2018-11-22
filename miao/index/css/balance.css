@@ -5,7 +5,7 @@
   justify-content: space-between;
   align-items: center;
   width: 90%;
-  height: 1.6rem;
+  height: 1rem;
   border-radius: 0.14rem;
   font-size: .32rem;
   color: #DFBA7E;
@@ -13,6 +13,17 @@
   margin-bottom: .7rem;
   background: url(../images/home/card-bg@2x.png) center no-repeat;
   background-size: 100% 100%;
+}
+
+.banner p ,
+.banner div span{
+  background-image: linear-gradient(to bottom,#FFE6A9, #DFBA7E);
+  -webkit-background-clip:text; 
+  -webkit-text-fill-color:transparent;
+}
+
+.banner p {
+  font-weight: bold;
 }
 
 .banner div {
@@ -31,36 +42,44 @@
 
 .count {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  width: 6.96rem;
-  padding-bottom: .3rem;
-  margin: auto;
+  width: 90%;
+  margin: .4rem auto;
   font-weight: bold;
   font-size: .32rem;
 }
 
 .play-detail {
+  height: 1.6rem;
+}
+
+.play-detail .detail {
   display: flex;
-  justify-content: space-between;
-  padding: .30rem .70rem;
+  width: 90%;
+  margin: auto;
+  height: 1.6rem;
   font-size: .32rem;
-  color: #333333;
-  font-weight: 500;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.play-detail div {
-  position: relative;
-  top: .30rem;
+.play-detail .detail .title {
+  margin-bottom: .2rem;
 }
 
-.play-detail div p {
-  padding: .05rem 0;
-}
-
-.play-detail .status {
-  line-height: 1.36rem;
+.play-detail .detail .gray {
+  color: #999999;
 }
 
 .border-bottom {
   border: #333333;
+}
+
+.banner {
+  margin-bottom: .4rem;
+}
+
+.dateList {
+  margin-bottom: .4rem;
 }

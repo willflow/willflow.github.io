@@ -30,7 +30,37 @@
   color: #333333;
 }
 
-.header .name span:first-child {
+.header .name {
+  display: flex;
+  position: relative;
+  bottom: -.03rem;
+  font-size: .24rem;
+  font-weight: bold;
+  align-items: center;
+}
+
+.header .name .img,
+.header .name .edit-img,
+.header .name .save-img {
+  width: .32rem;
+  height: .32rem;
+  margin-right: .1rem;
+  background: url("../images/home/search@2x.png") no-repeat;
+  background-size: 100% 100%;
+  vertical-align: top;
+}
+
+.header .name .edit-img {
+  background: url("../images/home/edit@2x.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+.header .name .save-img {
+  background: url("../images/home/保存@2x.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+.header .name .work {
   position: relative;
   box-sizing: border-box;
   font-size: .24rem;
@@ -38,14 +68,27 @@
   color: #333333;
 }
 
-.dateList ul {
+.header .name .border-bottom {
+  border-bottom: 1px solid #333333;
+}
+
+.header .name .head-img {
+  width: .44rem;
+  height: .44rem;
+  margin-left: .1rem;
+  border-radius: 50%;
+  background-color: #d8d8d8;
+}
+
+.dateList {
   display: flex;
   width: 90%;
   flex-wrap: nowrap;
   margin: auto;
 }
 
-.dateList ul li {
+.dateList button {
+  display: block;
   width: 1.58rem;
   height: .6rem;
   border-radius: .14rem;
@@ -59,4 +102,101 @@
 
 .dateList-active {
   background: linear-gradient(to bottom,#FFE6A9, #DFBA7E);
+}
+
+.start-time {
+  display: flex;
+  width: 96%;
+  margin: auto;
+  align-items: center;
+  font-size: .24rem;
+  justify-content: space-between;
+  margin-bottom: .3rem;
+}
+
+.start-time div {
+  display: flex;
+  align-items: center;
+}
+
+.start-time .searchId {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 2rem;
+  height: .6rem;
+  box-shadow: 0 3px 8px 1px #d6d5d5;
+  border-radius: .14rem;
+  margin:0 .2rem;
+  padding-left: .2rem;
+  background-color: #EEEEEE;
+}
+
+.start-time .search {
+  display: inline-block;
+  width: 1.1rem;
+  height: .6rem;
+  background: linear-gradient(to bottom,#FFE6A9, #DFBA7E);
+  box-shadow: 0 3px 8px 1px #d6d5d5;
+  border-radius: .14rem;
+  text-align: center;
+  line-height: .6rem;
+  font-size: .32rem;
+}
+
+.log-on {
+  display: flex;
+  width: 90%;
+  box-sizing: border-box;
+  margin: auto;
+  padding: .4rem 0 .4rem .6rem;
+  height: 2.56rem;
+  font-size: .32rem;
+  align-items: center;
+  border-radius: .14rem;
+  color: #DFBA7E;
+  background: url("../images/home/bg-card-black@2x.png") center no-repeat;
+  background-size: 100% 100%;
+}
+
+.log-on .img {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  margin-right: .2rem;
+  margin-bottom: .1rem;
+  text-align: center;
+  line-height: 1rem;
+  background-color: #DFBA7E;
+}
+
+.log-on .img img {
+  width: 100%;
+}
+
+.log-on .title p {
+  font-weight: bold;
+  padding: .06rem 0;
+  background-image: linear-gradient(to bottom,#FFE6A9, #DFBA7E);
+  -webkit-background-clip:text; 
+  -webkit-text-fill-color:transparent;
+}
+
+.log-on-btn {
+  width: 50%;
+  height: .8rem;
+  line-height: .8rem;
+  text-align: center;
+  margin: auto;
+  font-weight: bold;
+  margin-top: .4rem;
+  font-size: .32rem;
+  border-radius: .66rem;
+  background: linear-gradient(to bottom,#FFE6A9, #DFBA7E);
+  box-shadow: 0 3px 8px 1px #d6d5d5; 
+}
+
+@media (max-width:320px) {
+  .start-time .searchId {
+    width: 50%;
+  }
 }
