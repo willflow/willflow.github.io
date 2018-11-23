@@ -304,7 +304,15 @@
   margin-bottom: .2rem;
 }
 
-.untie-mask .content .item2:first-child {
+.untie-mask .content .item6 {
+  width: 100%;
+  text-align: center;
+  font-size: .28rem;
+  padding: .05rem 0;
+  background-color: #ccc;
+}
+
+.untie-mask .content .item2:nth-child(1) {
   text-align: center;
   font-size: .36rem;
   font-weight: 500;
