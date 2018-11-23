@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>家族后台-银行卡提现2</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/border.css">
+  <link rel="stylesheet" href="css/cashInfo.css">
+  <link rel="stylesheet" href="css/playManage.css">
+  <link rel="stylesheet" href="css/base.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="family">
+        <span class="family-img"></span>
+        <span class="family-title"><span class="border-bottom">家族收益</span> > 收益换币</span>
+      </div>
+    </div>
+    <div class="border-bottom bottom-margin"></div>
+    <div class="account">
+      <p>账号</p>
+      <input type="text" placeholder="" disabled>
+    </div>
+    <div class="account" placeholder="" disabled>
+      <p>收益</p>
+      <input type="text" placeholder="" disabled>
+      <div class="account-posi">元</div>
+    </div>
+    <div class="account">
+      <p>兑换</p>
+      <input type="text" placeholder="">
+      <div class="account-posi">元</div>
+    </div>
+    <div class="account">
+      <p>可换币</p>
+      <input type="text" placeholder="" disabled>
+    </div>
+    <!-- .active 添加黄色背景 -->
+    <button class="infoBtn">确认充值</button>
+  </div>
+  <!-- 弹出层出现.mask 弹出层消失.mask-hide -->
+  <div class="mask-hide">
+    <div class="untie-mask">
+      <div class="banner">
+        <span>充值确认</span>
+      </div>
+      <div class="content">
+        <div class="item4">确认用<span>100</span>元收益兑换<span>1100000</span>币?</div>
+      </div>
+      <div class="btn-warpper">
+        <button class="cancel">取消</button>
+        <button class="enter">确认</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

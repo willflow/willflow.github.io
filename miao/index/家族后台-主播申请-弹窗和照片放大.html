@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>家族后台-主播申请</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/border.css">
+  <link rel="stylesheet" href="css/familyPlayApply.css">
+</head>
+
+<body>
+  <div class="family-apply-header border-bottom">已有家族的主播无法发起申请</div>
+  <div class="container">
+    <div class="header">
+      <div class="family">
+        <span class="family-img"></span>
+        <span class="family-title"><span class="border-bottom">家族后台</span> > 主播申请</span>
+      </div>
+    </div>
+  </div>
+  <div class="auditing">
+    <!-- .audi-active点击选中变为黄色背景 -->
+    <div class="audi-active">未审核</div>
+    <div class="">全部</div>
+  </div>
+  <div class="banner">
+    <p>未审核主播申请：<span>3</span>人</p>
+  </div>
+  <div class="player-info">
+    <div class="info">
+      <div class="player-head-img"></div>
+      <p class="name">蓝鸟(90009)<span class="girl-img"></span></p>
+      <p>手机：<span>15012345678</span></p>
+      <div class="player-img">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div class="apply">
+      <!-- <p class="argee">已同意</p> -->
+      <button>同意</button>
+      <button class="cancel">拒绝</button>
+    </div>
+  </div>
+  <div class="player-info">
+    <div class="info">
+      <div class="player-head-img"></div>
+      <p class="name">蓝鸟(90009)<span class="boy-img"></span></p>
+      <p>手机：<span>15012345678</span></p>
+      <div class="player-img">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div class="apply">
+      <button>同意</button>
+      <button class="cancel">拒绝</button>
+    </div>
+  </div>
+  <div class="player-info">
+    <div class="info">
+      <div class="player-head-img"></div>
+      <p class="name">蓝鸟(90009)<span class="boy-img"></span></p>
+      <p>手机：<span>15012345678</span></p>
+      <div class="player-img">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div class="apply">
+      <button>同意</button>
+      <button class="cancel">拒绝</button>
+    </div>
+  </div>
+  <div class="player-info">
+    <div class="info">
+      <div class="player-head-img"></div>
+      <p class="name">蓝鸟(90009)<span class="boy-img"></span></p>
+      <p>手机：<span>15012345678</span></p>
+      <div class="player-img">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div class="apply">
+      <button>同意</button>
+      <button class="cancel">拒绝</button>
+    </div>
+  </div>
+  <div class="player-info">
+    <div class="info">
+      <div class="player-head-img"></div>
+      <p class="name">蓝鸟(90009)<span class="boy-img"></span></p>
+      <p>手机：<span>15012345678</span></p>
+      <div class="player-img">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div class="apply">
+      <button>同意</button>
+      <button class="cancel">拒绝</button>
+    </div>
+  </div>
+  <div class="player-info">
+    <div class="info">
+      <div class="player-head-img"></div>
+      <p class="name">蓝鸟(90009)<span class="boy-img"></span></p>
+      <p>手机：<span>15012345678</span></p>
+      <div class="player-img">
+        <span id="images"></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <div class="apply">
+      <button>同意</button>
+      <button class="cancel">拒绝</button>
+    </div>
+  </div>
+  <!-- mask display为none -->
+  <div class="mask">
+      <div class="untie-mask">
+        <div class="banner">
+          <span>解绑确认</span>
+        </div>
+        <p class="title">您确认将“蓝鸟(90009)”从您的家族中解绑?</p>
+        <div class="btn-warpper">
+          <button class="cancel">取消</button>
+          <button class="enter">确认</button>
+        </div>
+      </div>
+    </div>
+  <!-- 隐藏照片放大弹窗.image-blowup-hide -->
+  <div id="up" class="image-blowup-hide">
+    <div class="image-blow-up">
+      <div class="image-content">
+        <img src="#">
+      </div>
+    </div>
+  </div>
+  <script>
+    let imgs = document.getElementById("images")
+    console.log(imgs)
+    let up = document.getElementById("up")
+    imgs.addEventListener("click",function(){
+      up.className = ""
+    })
+    up.addEventListener("click",function(){
+      up.className = "image-blowup-hide"
+    })
+  </script>
+</body>
+
+</html>

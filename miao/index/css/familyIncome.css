@@ -53,11 +53,21 @@
 }
 
 .count {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 90%;
   margin: auto;
+  margin-top: .4rem;
   margin-bottom: .4rem;
   font-weight: bold;
   font-size: .32rem;
+}
+
+.count .btn {
+  padding: .1rem;
+  border-radius: .14rem;
+  background: linear-gradient(to bottom,#FFE6A9, #DFBA7E);
 }
 
 .play-detail {
