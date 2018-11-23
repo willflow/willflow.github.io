@@ -33,7 +33,9 @@
       <div class="family-name relative">
         <p class="title">家族主播</p>
         <p>78人</p>
-        <button class="btn">解绑家族</button>
+        <a href="https://willflow.github.io/miao/index/%E5%AE%B6%E6%97%8F%E8%B5%84%E6%96%99.html">
+          <button class="btn">解绑家族</button>
+        </a>
       </div>
       <div class="family-name">
         <p class="title">家族公告</p>
@@ -51,8 +53,8 @@
         <div class="item2">喝水不忘打井人！</div>
         <div class="item2">您在该家族累计收到<span>100</span>个娃娃,支付<span>100</span>元可以解除绑定</div>
         <div class="item3">
-          <div><input type="checkbox" id="zhifu"><label for="zhifu">使用支付宝支付</label></div>
-          <div><input type="checkbox" id="weixin"><label for="weixin">使用微信支付</label></div>
+          <div><input type="radio" name="money" id="zhifu"><label for="zhifu">使用支付宝支付</label></div>
+          <div><input type="radio" name="money" id="weixin"><label for="weixin">使用微信支付</label></div>
         </div>
       </div>
       <div class="btn-warpper">
@@ -61,6 +63,19 @@
       </div>
     </div>
   </div>
+
+  <script>
+    var cancel = document.getElementsByClassName("cancel")[0]
+    var mask = document.getElementsByClassName("mask")[0]
+    var btn = document.getElementsByClassName("btn")[0]
+    cancel.addEventListener("click",function () {
+      mask.className="mask-hide"
+    })
+    btn.addEventListener("click",function () {
+      var maskHide = document.getElementsByClassName("mask-hide")[0]
+      maskHide.className="mask"
+    })
+  </script>
 </body>
 
 </html>
