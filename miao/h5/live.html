@@ -87,7 +87,7 @@
       </div>
     </div>
   </div>
-  <a href="https://willflow.github.io/miao/h5/live-bro.html">
+  <!-- <a href="https://willflow.github.io/miao/h5/live-bro.html">
     <button class="share-head">
       打开热火直播，免费视频连麦
     </button>
@@ -142,7 +142,7 @@
       </div>
     </div>
   </div>
-  <div class="share-footer"><a href="https://willflow.github.io/miao/h5/live-bro.html" class="border-bottom">在APP中查看更多主播</a></div>
+  <div class="share-footer"><a href="https://willflow.github.io/miao/h5/live-bro.html" class="border-bottom">在APP中查看更多主播</a></div> -->
 
   <script>
     var extract = document.getElementsByClassName("live-extract")[0]
@@ -173,7 +173,7 @@
     }, true);
     //因为存在软键盘显示而屏幕大小还没被改变，所以以窗体（屏幕显示）大小改变为准
     window.addEventListener("resize", function() {
-        if (_focusElem && document.body.clientHeight < clientHeight) {
+        if (_focusElem && document.body.clientHeight <= clientHeight) {
             //焦点元素滚动到可视范围的底部(false为底部)
             _focusElem.scrollIntoView(false);
         }
