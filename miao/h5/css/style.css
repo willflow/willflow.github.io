@@ -18,6 +18,7 @@ body {
   padding: 2.5%;
   overflow: hidden;
   color: #ffffff;
+  z-index: 100;
 }
 
 .live-hearder {
@@ -68,7 +69,7 @@ body {
   overflow: hidden;
 }
 
-.head-right-wrapper::before {
+/* .head-right-wrapper::before {
   position: absolute;
   content: "";
   width: .35rem;
@@ -81,7 +82,7 @@ body {
   border-top-right-radius: 50% 50%;
   border-bottom-right-radius: 50% 50%;
   transform: translate(0,-50%);
-}
+} */
 
 .head-right-img {
   display: inline-block;
@@ -348,9 +349,9 @@ body {
 
 .live-invite-mask2 {
   position: absolute;
-  transform: translate(0,-50%);
+  transform: translate(-50%,-50%);
   top: 50%;
-  left: 0;
+  left: 50%;
   z-index: 102;
 }
 
@@ -359,8 +360,8 @@ body {
 }
 
 .live-invite {
-  width: 6rem;
-  height: 6.8rem;
+  width: 5.8rem;
+  height: 6.6rem;
   margin:0 auto;
   background: url("../images/img_envelope_bg@2x.png") center no-repeat;
   background-size: contain;
@@ -503,7 +504,11 @@ body {
   top: 0;
   left: 0;
   z-index: 99;
-  background-color: rgba(0,0,0,.5);
+  background-color: rgba(0,0,0,.7);
+}
+
+.top-browser {
+  color: #fff;
 }
 
 .top-browser .banner {

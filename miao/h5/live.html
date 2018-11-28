@@ -75,14 +75,14 @@
       <div class="live-chat">
         <div class="chat">
           <span></span>
-          <input type="text" placeholder="和主播说点什么吧">
+          <input id="chat" type="text" placeholder="和主播说点什么吧">
         </div>
         <button class="gift"></button>
         <a href="https://willflow.github.io/miao/h5/live.html">
-            <button class="lianmai">
-                <span></span>
-                邀请连麦
-              </button>
+          <button class="lianmai">
+            <span></span>
+            邀请连麦
+          </button>
         </a>
       </div>
     </div>
@@ -149,16 +149,20 @@
     var mask = document.getElementsByClassName("live-invite-mask2")[0]
     var invite = document.getElementsByClassName("live-invite")[0]
     var close = document.getElementsByClassName("invite-close")[0]
-
-    var functionBasedDuration = anime({
-        targets: '#functionBasedDuration .el',
-        translateX: 65,
-        direction: 'alternate',
-        loop: true,
-        duration: function (el, i, l) {
-          return 1000 + (i * 1000);
+    
+    window.onload = function () {
+        var u = navigator.userAgent;
+        if (u.indexOf('Android') > -1 || u.indexOf('Linux') > -1) {//安卓手机
+            //  拿到获取焦点的input
+            let input = document.getElementById('chat')
+            input.addEventListener('focus', function () {
+                setInterval(function () {
+                // 核心
+                    input.scrollIntoView(false);
+                }, 200)
+            })
         }
-      });
+    }
 
     extract.addEventListener("click", function () {
       extract.style.display = "none"
