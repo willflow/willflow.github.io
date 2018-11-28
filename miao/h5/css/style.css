@@ -3,8 +3,22 @@ html,body {
 }
 
 body {
-  background: url("../images/mask@2x.png") center no-repeat;
+  
   background-size: cover;
+}
+
+
+div#liveinfo
+{
+  overflow-y:scroll;
+  height:2rem;
+}
+
+p#nowarp{
+  overflow:hidden;
+  white-space:nowrap;
+  width:1.8rem;
+  text-overflow:ellipsis;
 }
 
 .live-wrapper {
@@ -18,13 +32,13 @@ body {
   padding: 2.5%;
   overflow: hidden;
   color: #ffffff;
-  z-index: 100;
+  z-index:99
 }
 
 .live-hearder {
   display: flex;
   width: 100%;
-  height: 1.44rem;
+  height: 1rem;
   justify-content: space-between;
   align-items: center;
 }
@@ -32,15 +46,15 @@ body {
 .live-hearder .head-left-wrapper {
   display: flex;
   align-items: center;
-  width: 3.7rem;
-  height: .8rem;
+  width: 2.9rem;
+  height: .6rem;
   background-color: rgba(0,0,0,.24);
   border-radius: .66rem;
 }
 
 .head-left-wrapper .head-left {
-  width: .8rem;
-  height: .8rem;
+  width: .5rem;
+  height: .5rem;
   background-color: #ccc;
   border-radius: 50%;
 }
@@ -51,11 +65,18 @@ body {
   flex-direction: column;
 }
 
+.head-left-wrapper .head-middle p {
+  font-size: .24rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
 .head-left-wrapper .head-right {
   display: block;
-  width: 1rem;
-  height: .6rem;
-  font-size: .32rem;
+  width: .8rem;
+  height: .5rem;
+  font-size: .24rem;
   color: #ffffff;
   background-color: #F7585D;
   border-radius: .66rem;
@@ -63,37 +84,21 @@ body {
 
 .head-right-wrapper {
   position: relative;
-  width: 3.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 2.4rem;
   height: .7rem;
-  text-align: right;
   overflow: hidden;
 }
 
-/* .head-right-wrapper::before {
-  position: absolute;
-  content: "";
-  width: .35rem;
-  height: .7rem;
-  top: 50%;
-  right: 0;
-  background-color: #ffffff;
-  z-index: 99;
-  opacity: .3;
-  border-top-right-radius: 50% 50%;
-  border-bottom-right-radius: 50% 50%;
-  transform: translate(0,-50%);
-} */
-
 .head-right-img {
   display: inline-block;
-  width: .7rem;
-  height: .7rem;
+  width: .5rem;
+  height: .5rem;
   border-radius: 50%;
   background-color: #ccc;
-}
-
-.head-right-wrapper .head-right-img:last-child {
-  opacity: .5;
+  margin-right: .06rem;
 }
 
 .head-right-wrapper .head-right-img:last-child {
@@ -102,8 +107,8 @@ body {
 
 .live-hot {
   display: inline-block;
-  height: .5rem;
-  line-height: .5rem;
+  height: .46rem;
+  line-height: .46rem;
   padding-right: .1rem;
   background-color: rgba(0,0,0,.24);
   border-radius: .66rem;
@@ -170,10 +175,10 @@ body {
 
 .live-footer .live-info .info-item {
   display: inline-block;
-  height: .6rem;
-  line-height: .6rem;
+  height: .5rem;
+  line-height: .5rem;
   color: #FFFA89;
-  font-size: .32rem;
+  font-size: .24rem;
   padding: 0 2%;
   background-color: rgba(0,0,0,.24);
   border-radius: .66rem;
@@ -232,8 +237,8 @@ body {
 }
 
 .live-footer .live-chat .gift {
-  width: .9rem;
-  height: .9rem;
+  width: .6rem;
+  height: .6rem;
   background: url("../images/ic_gift@2x.png") center no-repeat;
   background-size: contain;
 }
@@ -241,7 +246,7 @@ body {
 .live-footer .live-chat .chat {
   display: flex;
   width: 3.9rem;
-  height: .8rem;
+  height: .6rem;
   align-items: center;
   background-color: rgba(0,0,0,.24);
   border-radius: .66rem;
@@ -258,8 +263,7 @@ body {
 .live-footer .live-chat .chat input {
   width: 80%;
   height: .8rem;
-  color: #ffffff;
-  font-weight: bold;
+  color: #333333;
   font-size: .32rem;
   background-color: transparent;
   overflow: auto;
@@ -270,23 +274,24 @@ body {
 .live-footer .live-chat .lianmai {
   display: flex;
   align-items: center;
-  width: 2.4rem;
-  height: .8rem;
+  width: 2rem;
+  height: .6rem;
   color: #ffffff;
   border-radius: .66rem;
+  font-size: .24rem;
   background-color: #48D7CC;
 }
 
 .live-footer .live-chat .lianmai span {
-  width: .8rem;
-  height: .8rem;
-  margin-right: 1%;
+  width: .6rem;
+  height: .6rem;
+  margin-right: 2%;
   background: url("../images/link_ic_mai@2x.png") center no-repeat;
   background-size: contain;
 }
 
 .live-info .info-wrapper {
-  margin-bottom: .12rem;
+  margin-bottom: .06rem;
 }
 
 @media (max-width:375px) {
@@ -360,8 +365,8 @@ body {
 }
 
 .live-invite {
-  width: 5.8rem;
-  height: 6.6rem;
+  width: 6rem;
+  height: 6.8rem;
   margin:0 auto;
   background: url("../images/img_envelope_bg@2x.png") center no-repeat;
   background-size: contain;
@@ -448,6 +453,7 @@ body {
   align-items: center;
   flex-direction: column;
   left: 0;
+  z-index:110;
   bottom: 0;
   width: 100%;
   background-color: #fff;
@@ -504,11 +510,7 @@ body {
   top: 0;
   left: 0;
   z-index: 99;
-  background-color: rgba(0,0,0,.7);
-}
-
-.top-browser {
-  color: #fff;
+  background-color: rgba(0,0,0,.5);
 }
 
 .top-browser .banner {
@@ -529,6 +531,7 @@ body {
 /* 温馨提示 */
 .prompt-container {
   position: absolute;
+  z-index:110;
   top: 40%;
   left: 50%;
   transform: translate(-50%,-40%);
