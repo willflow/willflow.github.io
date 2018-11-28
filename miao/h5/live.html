@@ -149,8 +149,10 @@
     var mask = document.getElementsByClassName("live-invite-mask2")[0]
     var invite = document.getElementsByClassName("live-invite")[0]
     var close = document.getElementsByClassName("invite-close")[0]
+    var body = document.body
     
     window.onload = function () {
+        body.style.height = body.clientHeight
         var u = navigator.userAgent;
         if (u.indexOf('Android') > -1 || u.indexOf('Linux') > -1) {//安卓手机
             //  拿到获取焦点的input
