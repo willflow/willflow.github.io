@@ -46,7 +46,9 @@
 }
 
 .inputcode .icon,
-.inputphone .icon {
+.inputphone .icon,
+.mar-top .password,
+.mar-top2 .password {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -80,6 +82,7 @@
   font-size: .28rem;
   color: #999999;
   background-color: #EEEEEE;
+  color: black;
 }
 
 .send-code {
@@ -121,6 +124,48 @@
   line-height: 2.2rem;
   background-color: #ecebeb;
   box-shadow: 0 3px 8px 1px #d6d5d5;
+}
+
+.mar-top .password span,
+.mar-top2 .password span {
+  display: inline-block;
+  width: .24rem;
+  height: .32rem;
+  background: url('../images/PhoneHome/密码@2x.png') center no-repeat;
+  background-size: cover;
+}
+
+.mar-top  {
+  position: relative;
+  margin-top: .8rem;
+}
+
+.hide-psword {
+  position: absolute;
+  width: .24rem;
+  height: .32rem;
+  right: .3rem;
+  background: url('../images/PhoneHome/241隐藏、不可见@2x.png') center no-repeat;
+  background-size: cover;
+}
+
+.show-psword {
+  position: absolute;
+  width: .24rem;
+  height: .32rem;
+  right: .3rem;
+  background: url('../images/PhoneHome/240显示、可见@2x.png') center no-repeat;
+  background-size: cover;
+}
+
+.mar-top2 {
+  margin-top: .6rem;
+}
+
+.bind-rule {
+  width: 100%;
+  text-align: center;
+  margin-top: .2rem;
 }
 
 @media (-webkit-min-device-pixel-ratio: 3),(min-device-pixel-ratio: 3) {

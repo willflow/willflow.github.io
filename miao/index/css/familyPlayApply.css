@@ -145,7 +145,7 @@ body,html {
 }
 
 .untie-mask {
-  position: absolute;
+  position: fixed;
   z-index: 99;
   top: 4.2rem;
   left: 50%;
@@ -157,8 +157,7 @@ body,html {
 }
 
 .mask {
-  position: absolute;
-  display: none;
+  position: fixed;
   top: 0;
   left: 0;
   bottom: 0;

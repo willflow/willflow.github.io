@@ -66,6 +66,36 @@
   font-size: .24rem;
   font-weight: 550;
   color: #333333;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.ellipsis {
+  display: inline-block;
+  vertical-align: top;
+  width: 1rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.ellipsis1-5rem {
+  display: inline-block;
+  vertical-align: top;
+  width: 1.5rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.ellipsis2rem {
+  display: inline-block;
+  vertical-align: top;
+  width: 2rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .header .name .border-bottom {
@@ -97,7 +127,7 @@
   color: #333333;
   font-size: .32rem;
   background-color: #eee;
-  box-shadow: 0 3px 8px 1px #757575;
+  box-shadow: 0 1px 8px 0px #ccc;
 }
 
 .dateList-active {
@@ -349,5 +379,13 @@
 @media (max-width:320px) {
   .start-time .searchId {
     width: 50%;
+  }
+  .ellipsis2rem {
+    display: inline-block;
+    vertical-align: top;
+    width: 1rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
   }
 }

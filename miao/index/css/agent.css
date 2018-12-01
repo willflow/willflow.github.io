@@ -198,12 +198,74 @@ html .account:first-child {
   display: none;
 }
 
+.recruit-info {
+  color: #333;
+  font-weight: bold;
+  text-align: center;
+}
+
+.recruit-info p {
+  width: 66%;
+  margin: auto;
+}
+
 .recruit-info .title {
   margin-top: .5rem;
   margin-bottom: .6rem;
 }
 .recruit-info .info {
   margin-bottom: .6rem;
+}
+
+.recruit-info button {
+  width: 70%;
+  height: .8rem;
+  font-weight: bold;
+  margin: .5rem auto 1rem;
+  background: linear-gradient(to bottom,#FFE6A9, #DFBA7E);
+  border-radius: .66rem;
+}
+
+.recruit-info .url {
+  padding: .08rem;
+  border: 1px solid #cccccc;
+  font-size: .24rem;
+  font-weight: 100;
+  text-align: left;
+  margin-top: .4rem;
+  overflow: hidden;
+}
+
+.agent-banner2 {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+  height: 2.8rem;
+  font-size: .28rem;
+  font-weight: bold;
+  padding: .4rem;
+  background: url("../images/home/bg-card-black@2x.png") center no-repeat;
+  background-size: 100% 100%;
+}
+
+.agent-banner2 div {
+  background-image: linear-gradient(to bottom,#FFE6A9, #DFBA7E);
+  -webkit-background-clip:text; 
+  -webkit-text-fill-color:transparent;
+}
+
+.agent-banner2 div:nth-child(1) {
+  margin-bottom: .4rem;
+}
+
+.agent-banner2 div:nth-child(2) {
+  margin-bottom: .15rem;
+}
+
+.agent-banner2 .number {
+  font-size: .72rem;
 }
 
 @media (max-width:320px) {

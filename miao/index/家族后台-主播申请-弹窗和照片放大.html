@@ -129,17 +129,17 @@
   </div>
   <!-- mask display为none -->
   <div class="mask">
-      <div class="untie-mask">
-        <div class="banner">
-          <span>解绑确认</span>
-        </div>
-        <p class="title">您确认将“蓝鸟(90009)”从您的家族中解绑?</p>
-        <div class="btn-warpper">
-          <button class="cancel">取消</button>
-          <button class="enter">确认</button>
-        </div>
+    <div class="untie-mask">
+      <div class="banner">
+        <span>解绑确认</span>
+      </div>
+      <p class="title">您确认将“蓝鸟(90009)”从您的家族中解绑?</p>
+      <div class="btn-warpper">
+        <button class="cancel">取消</button>
+        <button class="enter">确认</button>
       </div>
     </div>
+  </div>
   <!-- 隐藏照片放大弹窗.image-blowup-hide -->
   <div id="up" class="image-blowup-hide">
     <div class="image-blow-up">
@@ -152,10 +152,10 @@
     let imgs = document.getElementById("images")
     console.log(imgs)
     let up = document.getElementById("up")
-    imgs.addEventListener("click",function(){
+    imgs.addEventListener("click", function () {
       up.className = ""
     })
-    up.addEventListener("click",function(){
+    up.addEventListener("click", function () {
       up.className = "image-blowup-hide"
     })
   </script>
