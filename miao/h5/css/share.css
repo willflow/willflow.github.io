@@ -68,7 +68,6 @@
   top: 50%;
   left: 0;
   z-index: 200;
-  transform: translate(0,-50%);
   width: 100%;
   height: .6rem;
   box-sizing: border-box;
