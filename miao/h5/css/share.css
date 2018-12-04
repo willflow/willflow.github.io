@@ -65,15 +65,19 @@
 
 .textInput {
   position: fixed;
+  top: 50%;
   left: 0;
-  bottom: 0;
+  z-index: 200;
+  transform: translate(0,-50%);
   width: 100%;
-  height: .4rem;
-  line-height: .4rem;
+  height: .6rem;
+  box-sizing: border-box;
+  line-height: .6rem;
   text-align: center;
-  background-color: #ccc;
+  border: 2px solid black;
 }
 
 .textInput input {
   width: 100%;
+  height: 100%;
 }
