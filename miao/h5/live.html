@@ -159,8 +159,8 @@
     var shareHead = document.getElementsByClassName("share-head")[0]
     var input = document.getElementById('chat')
 
-    window.addEventListener("scroll", function () {
-      var top = document.documentElement.scrollTop
+    window.addEventListener("onscroll", function () {
+      var top = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop
       var opac = (top / 2) / 80
       if(top > 15) {
         shareHead.style.opacity = opac > 1 ? 1 : opac
