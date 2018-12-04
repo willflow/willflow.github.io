@@ -156,7 +156,18 @@
     var mask = document.getElementsByClassName("live-invite-mask2")[0]
     var invite = document.getElementsByClassName("live-invite")[0]
     var close = document.getElementsByClassName("invite-close")[0]
+    var shareHead = document.getElementsByClassName("share-head")[0]
     var input = document.getElementById('chat')
+
+    window.addEventListener("scroll", function () {
+      var top = document.documentElement.scrollTop
+      var opac = (top / 2) / 80
+      if(top > 15) {
+        shareHead.style.opacity = opac > 1 ? 1 : opac
+      } else {
+        shareHead.style.opacity = 0
+      }
+    })
 
     input.addEventListener('focus', function () {
       input.scrollIntoView(false)

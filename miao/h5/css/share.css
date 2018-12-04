@@ -1,20 +1,25 @@
 .share-head {
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 999;
+  bottom: 0;
   display: block;
   width: 90%;
   height: 1.4rem;
-  margin: auto;
-  margin-top: .7rem;
   font-size: .32rem;
   font-weight: bold;
   color: #ffffff;
   background: url("../images/img_button_bg@2x.png") center no-repeat;
   background-size: contain;
+  opacity: 0;
 }
 
 .share-content {
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
+  margin-top: 1.6rem;
 }
 
 .share-content .content-item {
