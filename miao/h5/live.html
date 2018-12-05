@@ -181,7 +181,10 @@
       inputWrapper.style.opacity = 0;
     })
 
-    input.addEventListener('change', function() {
+    input.addEventListener('keypress', function() {
+      textInput.value = input.value;
+    })
+    input.addEventListener('keyup', function() {
       textInput.value = input.value;
     })
 
