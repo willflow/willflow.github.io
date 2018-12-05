@@ -83,7 +83,7 @@
 .ellipsis1-5rem {
   display: inline-block;
   vertical-align: top;
-  width: 1.5rem;
+  max-width: 1.5rem;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;

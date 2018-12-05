@@ -83,6 +83,23 @@
   padding: .60rem;
 }
 
+.deposit-banner3 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 2rem;
+  margin: auto;
+  margin-top: .4rem;
+  color: #DEBE81;
+  box-sizing: border-box;
+  background-image: url("../images/home/bg-card-black@2x.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: .14rem;
+  padding: .60rem;
+}
+
 .deposit-banner div {
   margin-bottom: .2rem;
 }
@@ -151,12 +168,14 @@
   color: #999999;
 }
 
-.deposit-banner2 {
+.deposit-banner2,
+.deposit-banner3 {
   flex-direction: row;
   align-items: center;
 }
 
-.deposit-banner2 div p:nth-child(2) {
+.deposit-banner2 div p:nth-child(2),
+.deposit-banner3 div p:nth-child(2) {
   display: inline-block;
   font-size: .72rem;
   font-weight: bold;
@@ -267,10 +286,9 @@
 
 .coin-btn {
   display: block;
-  margin: auto;
-  margin-top: .4rem;
-  width: 1.8rem;
+  width: 1.4rem;
   height: .6rem;
+  font-size: .24rem;
   border-radius: .14rem;
   background-image: linear-gradient(to bottom,#FFE6A9, #DFBA7E);
 }
@@ -378,6 +396,36 @@
   font-weight: bold;
   border-radius: .66rem;
   background-image: linear-gradient(to bottom,#FFE6A9, #DFBA7E);
+}
+
+.share-link {
+  width: 90%;
+  margin: auto;
+  font-size: .36rem;
+  margin-top: .8rem;
+  margin-bottom: .3rem;
+}
+
+.share {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+.share div {
+  flex: 1;
+}
+
+.share button {
+  width: 1rem;
+  border-radius: .33rem;
+  background-image: linear-gradient(to bottom,#FFE6A9, #DFBA7E);
+}
+
+.name-right {
+  margin-right: .1rem;
 }
 
 @media (max-width:375px) {
