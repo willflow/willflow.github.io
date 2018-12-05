@@ -293,6 +293,10 @@
   background-image: linear-gradient(to bottom,#FFE6A9, #DFBA7E);
 }
 
+.coin-btn a {
+  color: #333333;
+}
+
 .footer-notice {
   display: flex;
   width: 100%;
