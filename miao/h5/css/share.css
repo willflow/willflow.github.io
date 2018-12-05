@@ -76,12 +76,15 @@
   box-sizing: border-box;
   color: #333;
   background-color: rgb(255, 255, 255);
-  border: 1px solid rgb(167, 167, 167);
+  border-top: 1px solid rgb(167, 167, 167);
   opacity: 0;
+  overflow: scroll;
 }
 
 .textInput input {
   width: 100%;
+  box-sizing: border-box;
+  padding-left: .2rem;
   font-size: .24rem;
   background-color: rgb(252, 252, 252);
 }

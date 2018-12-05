@@ -94,7 +94,7 @@
       </div>
     </div>
   </div>
-  <div class="textInput"><input id="textInput" type="text" placeholder="和主播说点什么吧"></div>
+  <div class="textInput"><input id="textInput" type="text" placeholder="和主播说点什么吧" disabled></div>
   <a href="https://willflow.github.io/miao/h5/live-bro.html">
     <button class="share-head">
       打开热火直播，免费视频连麦
@@ -158,7 +158,8 @@
     var invite = document.getElementsByClassName("live-invite")[0]
     var close = document.getElementsByClassName("invite-close")[0]
     var shareHead = document.getElementsByClassName("share-head")[0]
-    var textInput = document.getElementsByClassName("textInput")[0]
+    var inputWrapper = document.getElementsByClassName("textInput")[0]
+    var textInput = document.getElementById('textInput')
     var input = document.getElementById('chat')
 
     window.addEventListener("scroll", function () {
@@ -173,11 +174,15 @@
 
     input.addEventListener('focus', function () {
       input.scrollIntoView(false)
-      textInput.style.opacity = 1;
+      inputWrapper.style.opacity = 1;
     })
 
     input.addEventListener('blur',function () {
-      textInput.style.opacity = 0;
+      inputWrapper.style.opacity = 0;
+    })
+
+    input.addEventListener('keyup', function() {
+      textInput.value = input.value;
     })
 
     extract.addEventListener("click", function () {
